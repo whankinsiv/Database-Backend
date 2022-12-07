@@ -12,10 +12,4 @@ if ($conn->connect_error) {
     echo("Connected successfully\n");
 }
 
-
-
-// Function for getting a row from database
-function getRow($rowNumber) {
-    echo "$rowNumber";
-}
 ?>
