@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Website Title</title>
+    <link rel="stylesheet" href="homePage.css">
+</head>
+
+<body>
+    <div id="header">
+        <div id="title">
+            Prescott MLS
+        </div>
+
+        <div id="searchProperty">
+            <input id="searchInput" placeholder="Search Property..">
+            <button id="searchButton" onclick=populateRow()>Search</button>
+            <button id="filterButton">Filter</button>
+        </div>
+
+        <div id="newListing">
+            <button id="newListingButton">Input New Listing</button>
+        </div>
+    </div>
+
+    <div id="mainContent">
+        <table id="listingsTable">
+            <thead>
+                <tr>
+                    <th>Picture</th>
+                    <th>Address</th>
+                    <th>List Price</th>
+                </tr>
+            </thead>
+
+            <tbody></tbody>
+        </table>
+
+    </div>
+
+    <div id="filterPopup">
+        <div id="filterPopupHeader">
+            <button id="resetFilter">Reset</button>
+            <div id="numOfResults">
+                # of Results
+            </div>
+            <button id="setFilter">Done</button>
+        </div>
+        <div id="filterPopupBody">
+            <form>
+                <div id="priceRange">
+                    <div>Price Range</div>
+                    <input type="text" placeholder="Min Price">
+                    <input type="text" placeholder="Max Price">
+                </div>
+                <label>Minimum # of bedrooms</label>
+                <input type="text">
+            </form>
+        </div>
+    </div>
+
+    <div id="newListingPopup">
+        <div id="newListingPopupHeader">
+            New Listing
+        </div>
+        <div id="newListingPopupBody">
+            <div id="agentInformationContainer">
+                Agent Information
+                <form>
+                    <label for="agentFirstName">Agent First Name</label>
+                    <input type="text" id="agentFirstName">
+                    <label for="agentLastName">Agent Last Name</label>
+                    <input type="text" id="agentLastName">
+                </form>
+            </div>
+            <div id="addressInformationContainer">
+                Address Information
+            </div>
+            <div id="contractInformationContainer">
+                Contract Information
+            </div>
+            <div id="propertyInformationContainer">
+                Property Information
+            </div>
+            <div id="submitButtonContainer">
+                <button id="submitNewListingButton">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay" onclick="closeFilterPopup(); closeNewListingPopup()"></div>
+    <script src="loadData.js"></script>
+    <script src="filterPopup.js"></script>
+    <script src="newListingPopup.js"></script>
+</body>
+
+</html>
