@@ -1,3 +1,11 @@
+function loadData() {
+  fetch('http://www.example.com/php/script.php')
+    .then(response => response.json())
+    .then(data => {
+    // Do something with the data
+  });
+}
+
 // Function for populating the home page listings table.
 function populateTable(numOfEntries) {
     for (let i = 0; i < numOfEntries; i++) {
