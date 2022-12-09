@@ -22,6 +22,7 @@ while ($row = $result->fetch_array()) {
 
 $i = 0;
 
+// Get property address, city, state using house_id
 while($i < count($data) {
   $query = "SELECT street_address, city, State FROM house where house_id = '" . $data[i] . "'";
   $result = mysqli_query($conn, $query);
