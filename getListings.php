@@ -19,8 +19,9 @@ $result = $conn->query($query);
 
 // Process the result
 while ($row = $result->fetch_array()) {
-  echo $row['city'];
+  $data[] = $row['city'];
 }
+echo json_encode($data);
 
 // Close the connection
 mysqli_close($conn);
