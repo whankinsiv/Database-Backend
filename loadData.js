@@ -1,4 +1,5 @@
 function loadData() {
+  console.log("Getting listings from DB");
   fetch('/getListings.php')
     .then(response => response.json())
     .then(data => {
