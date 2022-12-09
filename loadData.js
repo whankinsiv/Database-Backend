@@ -1,3 +1,4 @@
+// Function to pull listings from the database
 function loadData() {
   console.log("Getting listings from DB");
   fetch('/getListings.php')
