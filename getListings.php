@@ -11,8 +11,8 @@ $conn = new mysqli($servername, $username, $password, $database);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-// Make query request
-$query = "SELECT * FROM house";
+// Get the current listing id's and asking prices
+$query = "SELECT listing_id, asking_price FROM current_listings";
 $result = $conn->query($query);
 
 // Process the result
