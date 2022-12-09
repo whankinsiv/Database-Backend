@@ -12,12 +12,21 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 // Get the current listing id's and asking prices
-$query = "SELECT listing_id, asking_price FROM current_listings";
+$query = "SELECT house_id, asking_price FROM current_listings";
 $result = $conn->query($query);
 
 // Process the result
 while ($row = $result->fetch_array()) {
   $data[] = $row;
+}
+
+$i = 0;
+
+while($i < count($data) {
+  $query = "SELECT street_address, city, State FROM house where house_id = '" . $data[i] . "'";
+  $result = mysqli_query($conn, $query);
+  echo $result;
+  $i++;
 }
 echo json_encode($data);
 
