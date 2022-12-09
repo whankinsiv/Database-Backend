@@ -1,5 +1,5 @@
 function loadData() {
-  fetch('http://www.example.com/php/script.php')
+  fetch('/getListings.php')
     .then(response => response.json())
     .then(data => {
     // Do something with the data
