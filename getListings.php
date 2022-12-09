@@ -23,7 +23,6 @@ while ($row1 = $result1->fetch_array()) {
   // Process result of second query
   while ($row2 = mysqli_fetch_array($result2)) {
     $data[] = $row2;
-    $data[] += $row1["asking_price"];
   }
 }
 echo json_encode($data);
