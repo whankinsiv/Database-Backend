@@ -4,8 +4,12 @@ function loadData() {
   fetch('/getListings.php')
     .then(response => response.json())
     .then(data => {
-    // Do something with the data
+    
+    // Populate listings table with data
     console.log(data);
+    for (let i=0; i < data.length; i++) {
+      populateRow(i)
+    }
   });
 }
 
