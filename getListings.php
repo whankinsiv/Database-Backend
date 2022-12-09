@@ -12,4 +12,17 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 echo "Connected";
+
+// Make query request
+$query = "SELECT * FROM house";
+$result = mysqli_query($conn, $query);
+
+// Process the result
+while ($row = mysqli_fetch_array($result)) {
+  echo $result;
+}
+
+// Close the connection
+mysqli_close($conn);
+
 ?>
