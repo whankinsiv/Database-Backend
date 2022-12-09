@@ -17,7 +17,7 @@ $result1 = $conn->query($query1);
 
 // Process the result
 while ($row1 = $result1->fetch_array()) {
-  $query2 = "SELECT street_address, city, State FROM house where house_id = '" . $row1["house_id"]] . "'";
+  $query2 = "SELECT street_address, city, State FROM house where house_id = '" . $row1["house_id"] . "'";
   $result2 = mysqli_query($conn, $query2);
   
   // Process result of second query
