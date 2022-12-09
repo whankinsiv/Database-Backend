@@ -15,11 +15,11 @@ echo "Connected";
 
 // Make query request
 $query = "SELECT * FROM house";
-$result = mysqli_query($conn, $query);
+$result = $conn->query($query);
 
 // Process the result
-while ($row = mysqli_fetch_array($result)) {
-  echo $result;
+while ($row = $result->fetch_array()) {
+  echo $row['city'];
 }
 
 // Close the connection
