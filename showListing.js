@@ -52,9 +52,8 @@ async function listingClicked(house_id) {
 // Function to query database for listing info based on house_id
 async function getListingData(house_id) {
     var script = "/getListingInfo.php?house_id=" + encodeURIComponent(house_id);
-    await fetch(script)
-    .then(response => response.json())
-    .then(data => {
+    const response = await fetch(script);
+    const data = await response.json();
     
     // Set Global variable  holding currently clicked listing info. 
     clickedListingInfo = data;
