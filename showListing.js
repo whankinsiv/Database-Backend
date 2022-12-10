@@ -22,7 +22,8 @@ async function listingClicked(house_id) {
     var listDate = clickedListingInfo[0]['market_enter_date'];
     
     // Populate showingListingPopupHeader
-    listingPopupHeader.innerHTML = state;
+    listingPopupHeader.innerHTML = "<div>" + address + "<\div>";
+    listingPopupHeader.innerHTML += "<div>" + askingPrice + "<\div>";
     
     // Populate showingListingPopupBody
     listingPopupBody.innerHTML = "<div>Bedrooms: " + bedroomCount + "<\div>";
