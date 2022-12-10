@@ -7,10 +7,7 @@ function loadData() {
     .then(data => {
     currentListings = data;
     // Populate listings table with data
-    console.log(currentListings);
-    for (let i=0; i < data.length; i++) {
-      populateRow(i)
-    }
+    populateTable(currentListings.length);
   });
 }
 
