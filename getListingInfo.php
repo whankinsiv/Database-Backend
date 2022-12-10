@@ -22,7 +22,7 @@ $result = $conn->query($query);
 while ($row = $result->fetch_array()) {
   $data[] = $row;
 }
-echo $result->fetch_array(); //json_encode($data);
+echo json_encode($data);
 
 // Close the connection
 mysqli_close($conn);
