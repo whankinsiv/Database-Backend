@@ -20,7 +20,7 @@ function getListingData(house_id) {
     .then(response => response.json())
     .then(data => {
     
-    // Set Global variable for all current listings. 
+    // Set Global variable  holding currently clicked listing info. 
     clickedListingInfo = data;
     });
 }
