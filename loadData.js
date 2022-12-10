@@ -24,9 +24,9 @@ function populateRow(row) {
     var name = "test";
     tableBody.innerHTML += `
         <tr onclick="listingClicked(${currentListings[row]["house_id"]});">
-            <td> ${currentListings[row]["street_address"]} ${currentListings[row]["city"]} </td>
-            <td> ${currentListings[row]["asking_price"]} </td>
-            <td> ${currentListings[row]["State"]} </td>
+            <td> ${currentListings[row]["street_address"]} </td>
+            <td> ${currentListings[row]["city"]}, ${currentListings[row]["State"]} </td>
+            <td> $${currentListings[row]["asking_price"]} </td>
         </tr>`
     ;
 }
