@@ -5,10 +5,10 @@ const listingPopupHeader = document.getElementById("showLIstingPopupHeader");
 var clickedListingInfo
 
 // Function for when an individual listing is clicked.
-async function listingClicked(house_id) {
+function listingClicked(house_id) {
     
     // Get listing information from the database using the house_id
-    await getListingData(house_id);
+    getListingData(house_id);
     console.log(clickedListingInfo);
     
     // Populate showingListingPopup
@@ -19,7 +19,7 @@ async function listingClicked(house_id) {
 }
 
 // Function to query database for listing info based on house_id
-async function getListingData(house_id) {
+function getListingData(house_id) {
     var script = "/getListingInfo.php?house_id=" + encodeURIComponent(house_id);
     fetch(script)
     .then(response => response.json())
