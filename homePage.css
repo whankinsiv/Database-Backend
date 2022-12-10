@@ -154,26 +154,28 @@ tr {
 }
 
 #showListingPopupHeader {
-    margin-left: 10%;
-    margin-right: 10%;
     display: flex;
     justify-content: space-between;
     font-weight: bold;
+    padding: 10px 15px;
 }
 
 #showListingPopupBody {
     display: flex;
     justify-content: space-between;
+    padding: 10px 15px;
 }
 
 #showListingPopupInfo {
     display: flex;
     flex-direction: column;
+    padding: 10px 15px;
 }
 
 #showListingPopupHistory {
     display: flex;
     flex-direction: column;
+    padding: 10px 15px;
 }
 
 #overlay {
