@@ -12,7 +12,7 @@ function listingClicked(house_id) {
     console.log(clickedListingInfo);
     
     // Populate showingListingPopup
-    listingPopupHeader.innerHTML = clickedListingInfo["nearest_school"];
+    listingPopupHeader.innerHTML = clickedListingInfo;
     
     listingPopup.classList.add('active');
     overlay.classList.add('active');
