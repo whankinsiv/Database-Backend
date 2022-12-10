@@ -1,5 +1,6 @@
 const listingPopup = document.getElementById("showListingPopup");
 const listingPopupHeader = document.getElementById("showListingPopupHeader");
+const listingPopupBody = document.getElementById("showListingPopupBody");
 
 // Global variable to hold the property info about the last clicked listing.
 var clickedListingInfo
@@ -12,6 +13,15 @@ async function listingClicked(house_id) {
     
     // Populate showingListingPopup
     var state = clickedListingInfo[0]['State'];
+    var city = clickedListingInfo[0]['city'];
+    
+    var bedroomCount = clickedListingInfo[0]['bedroom_count'];
+    var bathroomCount = clickedListingInfo[0]['bathroom_count'];
+
+    var askingPrice = clickedListingInfo[0]['asking_price'];
+    var listDate = clickedListingInfo[0]['market_enter_date'];
+    clickedListingInfo[0]['State']
+    clickedListingInfo[0]['State']
     listingPopupHeader.innerHTML = state;
     
     listingPopup.classList.add('active');
