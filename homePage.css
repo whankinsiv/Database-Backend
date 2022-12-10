@@ -148,7 +148,7 @@ tr {
 }
 
 #showListingPopupHeader {
-    padding: 10% 15px;
+    padding: 20% 20%;
     display: flex;
     justify-content: space-between;
 }
