@@ -20,7 +20,7 @@ $query = "SELECT current_listings.house_id, asking_price, street_address, city, 
 $result = $conn->query($query);
 
 // Return listing info
-echo json_encode($result);
+echo $result;
 
 // Close the connection
 mysqli_close($conn);
