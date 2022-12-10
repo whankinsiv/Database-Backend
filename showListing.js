@@ -1,5 +1,5 @@
 const listingPopup = document.getElementById("showListingPopup");
-const listingPopupHeader = document.getElementById("showLIstingPopupHeader");
+const listingPopupHeader = document.getElementById("showListingPopupHeader");
 
 // Global variable to hold the property info about the last clicked listing.
 var clickedListingInfo
