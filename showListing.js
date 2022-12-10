@@ -5,3 +5,8 @@ function listingClicked(house_id) {
     listingPopup.classList.add('active');
     overlay.classList.add('active');
 }
+
+function closeShowListingPopup() {
+    listingPopup.classList.remove('active');
+    overlay.classList.remove('active');
+}
