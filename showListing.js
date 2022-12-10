@@ -37,7 +37,7 @@ async function listingClicked(house_id) {
 
     // Populate property history
     listingPopupHistory.innerHTML = "Propert History:"
-    listingPopupHistory.innerHTML += "<div>Bathrooms: " + bathroomCount + "<\div>";
+    listingPopupHistory.innerHTML += "<div>Put past listings w/ same housee id here<\div>";
 
     // Make Popup visable
     listingPopup.classList.add('active');
