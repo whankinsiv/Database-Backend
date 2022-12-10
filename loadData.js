@@ -8,7 +8,6 @@ function loadData() {
     currentListings = data;
     // Populate listings table with data
     console.log(currentListings);
-    console.log(currentListings[0]["street_address"]);
     for (let i=0; i < data.length; i++) {
       populateRow(i)
     }
@@ -28,7 +27,7 @@ function populateRow(row) {
     var name = "test";
     tableBody.innerHTML += `
         <tr>
-            <td> ${currentListings[row["State"]]} </td>
+            <td> ${currentListings[0]["street_address"]} </td>
             <td> ${name} </td>
             <td> ${name} </td>
         </tr>`
