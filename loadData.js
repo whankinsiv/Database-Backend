@@ -6,10 +6,14 @@ function loadData() {
   fetch('/getListings.php')
     .then(response => response.json())
     .then(data => {
+    
+    // Set Global variable for all current listings. 
     currentListingsOrdered = data;
+    
+    // currentListings is the displayed shuffled listings so user does not see same listings on each page load
     currentListings = currentListingsOrdered;
     
-   /* Randomize array in-place using Durstenfeld shuffle algorithm */
+   /* Shuffle array to be displayed to user */
    for (var i = currentListings.length - 1; i > 0; i--) {
        var j = Math.floor(Math.random() * (i + 1));
        var temp = currentListings[i];
