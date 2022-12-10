@@ -13,7 +13,7 @@ tr {
     border-collapse: collapse;
 }
 
-table {
+table, thead {
     width: 100%;
 }
 
