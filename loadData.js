@@ -1,6 +1,8 @@
+// Global Variables for listings data
 var currentListings
 var currentListingsOrdered
-// Function to pull listings from the database
+
+// Function to pull listings from the database and display them to the home screen
 function loadData() {
   console.log("Getting listings from DB");
   fetch('/getListings.php')
