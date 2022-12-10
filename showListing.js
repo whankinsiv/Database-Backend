@@ -45,8 +45,7 @@ async function listingClicked(house_id) {
     listingPopupHistory.innerHTML += "<div>Put past listings w/ same house id here<\div>";
 
     // Populate footer
-    listingPopupFooter.innerHTML = "<div>Listed " + listDate + "</div>";
-    listingPopupFooter.innerHTML += "<div>Listed " + listDate + " by " + listAgent + " of " + listBrokerage + "</div>";
+    listingPopupFooter.innerHTML = "<div>Listed " + listDate + " by " + listAgent + " of " + listBrokerage + "</div>";
     
     // Make Popup visable
     listingPopup.classList.add('active');
