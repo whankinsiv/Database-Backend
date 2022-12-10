@@ -11,7 +11,7 @@ function listingClicked(house_id) {
 }
 
 function getListingData(house_id) {
-    var script = "/getListingInfo.php?houseid=" + encodeURIComponent(house_id;
+    var script = "/getListingInfo.php?houseid=" + encodeURIComponent(house_id);
     fetch(script)
     .then(response => response.json())
     .then(data => {
