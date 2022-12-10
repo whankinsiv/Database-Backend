@@ -161,11 +161,11 @@ tr {
 
 #showListingPopupBody {
     display: flex;
+    flex-direction: column;
 }
 
 #propertyInfo {
     display: flex;
-    flex-direction: column;
 }
 
 #overlay {
