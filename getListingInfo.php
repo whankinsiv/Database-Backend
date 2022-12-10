@@ -28,7 +28,7 @@ $result2 = $conn->query($query2);
 while ($row2 = $result2->fetch_array()) {
   $data2[] = $row2;
 }
-$data[] += $data2;
+$array_push($data, $data2);
 
 echo json_encode($data);
 
