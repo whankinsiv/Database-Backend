@@ -144,6 +144,7 @@ tr {
     width: 80%;
     max-width: 1200px;
     z-index: 4;
+    min-height: 200px;
 }
 
 #overlay {
