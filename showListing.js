@@ -12,6 +12,7 @@ async function listingClicked(house_id) {
     let test = await getListingData(house_id);
     
     // Collect variables from JSON
+    var address = clickedListingInfo[0]['street_address'];
     var state = clickedListingInfo[0]['State'];
     var city = clickedListingInfo[0]['city'];
     
