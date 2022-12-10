@@ -1,10 +1,11 @@
+var currentListings
 // Function to pull listings from the database
 function loadData() {
   console.log("Getting listings from DB");
   fetch('/getListings.php')
     .then(response => response.json())
     .then(data => {
-    
+    currentListings = data;
     // Populate listings table with data
     console.log(data);
     for (let i=0; i < data.length; i++) {
@@ -25,9 +26,9 @@ function populateRow(row) {
     var tableBody = document.querySelector("tbody");
     tableBody.innerHTML += `
         <tr>
-            <td>Image Here</td>
-            <td>Address Here</td>
-            <td>Listing Price Here</td>
-        </tr>
-    `;
+            <td>` + currentListings[i[0]] + `</td>
+            <td>` + Address Here` + `</td>
+            <td>` + Listing Price Here` + </td>
+        </tr>`
+    ;
 }
