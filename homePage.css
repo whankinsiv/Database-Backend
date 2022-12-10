@@ -164,10 +164,6 @@ tr {
     flex-direction: column;
 }
 
-#propertyInfo {
-    display: flex;
-}
-
 #overlay {
     position: fixed;
     opacity: 0;
