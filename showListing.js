@@ -4,14 +4,14 @@ const listingPopup = document.getElementById("showListingPopup");
 function listingClicked(house_id) {
     
     // Get listing information from the database using the house_id
-    
+    getListingData(house_id);
     
     listingPopup.classList.add('active');
     overlay.classList.add('active');
 }
 
 function getListingData(house_id) {
-    var script = "'/getListingInfo.php?houseid=" + house_id "'"
+    var script = "'/getListingInfo.php?houseid=" + house_id + "'";
     fetch(script)
     .then(response => response.json())
     .then(data => {
