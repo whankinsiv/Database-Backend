@@ -159,6 +159,10 @@ tr {
     justify-content: space-between;
 }
 
+#showListingPopupBody {
+    display: flex;
+}
+
 #overlay {
     position: fixed;
     opacity: 0;
