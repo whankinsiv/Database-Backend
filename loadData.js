@@ -8,7 +8,7 @@ function loadData() {
     currentListings = data;
     // Populate listings table with data
     console.log(currentListings);
-    console.log(currentListings[0][0]);
+    console.log(currentListings[0]["street_address"]);
     for (let i=0; i < data.length; i++) {
       populateRow(i)
     }
