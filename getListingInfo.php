@@ -23,7 +23,7 @@ $result = $conn->query($query);
 while ($row = $result->fetch_array()) {
   $data[] = $row;
 }
-echo json_encode($data);
+echo json_encode($data) . "\n";
 
 // Close the connection
 mysqli_close($conn);
