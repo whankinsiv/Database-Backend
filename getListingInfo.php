@@ -23,8 +23,14 @@ while ($row = $result->fetch_array()) {
   $data[] = $row;
 }
 
+$query2 = "SELECT * from prior_listings WHERE house_id = '" . $house_id . "'";
+$result2 = $conn->query($query2);
+while ($row2 = $result2->fetch_array()) {
+  $data2[] = $row2;
+}
 
 echo json_encode($data);
+echo json_encode($data2);
 
 // Close the connection
 mysqli_close($conn);
