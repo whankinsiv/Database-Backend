@@ -8,7 +8,7 @@ var clickedListingInfo
 async function listingClicked(house_id) {
     
     // Get listing information from the database using the house_id
-    await getListingData(house_id);
+    await test = getListingData(house_id);
     
     // Populate showingListingPopup
     listingPopupHeader.innerHTML = clickedListingInfo;
@@ -18,9 +18,9 @@ async function listingClicked(house_id) {
 }
 
 // Function to query database for listing info based on house_id
-function getListingData(house_id) {
+async function getListingData(house_id) {
     var script = "/getListingInfo.php?house_id=" + encodeURIComponent(house_id);
-    fetch(script)
+    await fetch(script)
     .then(response => response.json())
     .then(data => {
     
