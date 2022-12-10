@@ -59,8 +59,8 @@ async function getListingData(house_id) {
     // Set Global variable  holding currently clicked listing info. 
     clickedListingInfo = data;
     console.log(clickedListingInfo);
-    return clickedListingInfo;
     });
+    return clickedListingInfo;
 }
 
 // Function to close the listing popup
