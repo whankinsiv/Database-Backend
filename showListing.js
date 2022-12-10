@@ -30,7 +30,7 @@ async function listingClicked(house_id) {
     listingPopupHeader.innerHTML += "<div>$" + askingPrice + "<\div>";
     
     // Populate property information
-    listingPopupInfo.innerHTML += "<div>sqft: " + sqft + "<\div>";
+    listingPopupInfo.innerHTML = "<div>sqft: " + sqft + "<\div>";
     listingPopupInfo.innerHTML += "<div>Bedrooms: " + bedroomCount + "<\div>";
     listingPopupInfo.innerHTML += "<div>Bathrooms: " + bathroomCount + "<\div>";
 
