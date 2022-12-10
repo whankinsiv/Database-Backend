@@ -161,6 +161,7 @@ tr {
 
 #showListingPopupBody {
     display: flex;
+    justify-content: space-between;
 }
 
 #showListingPopupInfo {
