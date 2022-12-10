@@ -25,8 +25,8 @@ async function listingClicked(house_id) {
     listingPopupHeader.innerHTML = state;
     
     // Populate showingListingPopupBody
-    listingPopupBody.innerHTML = "Bathrooms: " + bathroomCount;
     listingPopupBody.innerHTML = "Bedrooms: " + bedroomCount
+    listingPopupBody.innerHTML += "Bathrooms: " + bathroomCount;
     
     // Make Popup visable
     listingPopup.classList.add('active');
