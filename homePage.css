@@ -178,6 +178,12 @@ tr {
     padding: 10px 15px;
 }
 
+#showListingPopupFooter {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+}
+
 #overlay {
     position: fixed;
     opacity: 0;
