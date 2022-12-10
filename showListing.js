@@ -18,7 +18,7 @@ function listingClicked(house_id) {
 }
 
 // Function to query database for listing info based on house_id
-function getListingData(house_id) {
+async function getListingData(house_id) {
     var script = "/getListingInfo.php?house_id=" + encodeURIComponent(house_id);
     fetch(script)
     .then(response => response.json())
