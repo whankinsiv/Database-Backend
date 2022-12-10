@@ -11,7 +11,7 @@ async function listingClicked(house_id) {
     await getListingData(house_id);
     
     // Populate showingListingPopup
-    listingPopupHeader.innerHTML = clickedListingInfo[0]["nearest_school"];
+    listingPopupHeader.innerHTML = clickedListingInfo["nearest_school"];
     
     listingPopup.classList.add('active');
     overlay.classList.add('active');
