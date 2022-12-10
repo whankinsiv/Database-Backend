@@ -11,11 +11,10 @@ function listingClicked(house_id) {
     getListingData(house_id);
     
     // Populate showingListingPopup
-    //listingPopupHeader.innerHTML = clickedListingInfo;
+    listingPopupHeader.innerHTML = clickedListingInfo;
     
     listingPopup.classList.add('active');
     overlay.classList.add('active');
-    console.log(clickedListingInfo);
 }
 
 // Function to query database for listing info based on house_id
@@ -27,6 +26,7 @@ function getListingData(house_id) {
     
     // Set Global variable  holding currently clicked listing info. 
     clickedListingInfo = data;
+    console.log(clickedListingInfo);
     });
 }
 
