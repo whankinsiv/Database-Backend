@@ -147,6 +147,11 @@ tr {
     min-height: 200px;
 }
 
+#showListingPopupHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
 #overlay {
     position: fixed;
     opacity: 0;
