@@ -16,7 +16,7 @@ if ($conn->connect_error) {
 $house_id = $_GET["house_id"];
 
 // Get the listing information from the house_id
-$query = "";
+$query = "SELECT current_listings.house_id, asking_price, street_address, city, State FROM current_listings INNER JOIN house ON current_listings.house_id = house.house_id";
 $result = $conn->query($query);
 
 // Process the result
