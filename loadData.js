@@ -23,7 +23,7 @@ function populateRow(row) {
     var tableBody = document.querySelector("tbody");
     var name = "test";
     tableBody.innerHTML += `
-        <tr onclick="listingClicked(${currentListings[row]["house_id"]})>
+        <tr>
             <td> ${currentListings[row]["street_address"]} </td>
             <td> ${currentListings[row]["city"]} </td>
             <td> ${currentListings[row]["State"]} </td>
