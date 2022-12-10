@@ -178,8 +178,9 @@ tr {
 }
 
 #showListingPopupFooter {
-    margin: 3%;
+    padding: 3%;
 }
+
 #overlay {
     position: fixed;
     opacity: 0;
