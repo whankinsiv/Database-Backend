@@ -1,5 +1,8 @@
 const listingPopup = document.getElementById("showListingPopup");
+
+// Global variable to hold the property info about the last clicked listing.
 var clickedListingInfo
+
 // Function for when an individual listing is clicked.
 function listingClicked(house_id) {
     
@@ -10,6 +13,7 @@ function listingClicked(house_id) {
     overlay.classList.add('active');
 }
 
+// Function to query database for listing info based on house_id
 function getListingData(house_id) {
     var script = "/getListingInfo.php?house_id=" + encodeURIComponent(house_id);
     fetch(script)
@@ -19,13 +23,9 @@ function getListingData(house_id) {
     // Set Global variable for all current listings. 
     clickedListingInfo = data;
     });
-
 }
 
-
-
-
-
+// Function to close the listing popup
 function closeShowListingPopup() {
     listingPopup.classList.remove('active');
     overlay.classList.remove('active');
