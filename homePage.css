@@ -177,6 +177,9 @@ tr {
     flex-direction: column;
 }
 
+#showListingPopupFooter {
+    margin: 3%;
+}
 #overlay {
     position: fixed;
     opacity: 0;
