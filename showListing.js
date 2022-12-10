@@ -8,7 +8,7 @@ var clickedListingInfo
 async function listingClicked(house_id) {
     
     // Get listing information from the database using the house_id
-    await test = getListingData(house_id);
+    let test = await getListingData(house_id);
     
     // Populate showingListingPopup
     listingPopupHeader.innerHTML = clickedListingInfo;
