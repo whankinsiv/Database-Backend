@@ -8,7 +8,7 @@ var clickedListingInfo
 function listingClicked(house_id) {
     
     // Get listing information from the database using the house_id
-    getListingData(house_id);
+    await getListingData(house_id);
     
     // Populate showingListingPopup
     listingPopupHeader.innerHTML = clickedListingInfo[0]["nearest_school"];
