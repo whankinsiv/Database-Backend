@@ -26,9 +26,9 @@ function populateRow(row) {
     var tableBody = document.querySelector("tbody");
     tableBody.innerHTML += `
         <tr>
-            <td>` + currentListings[i[0]] + `</td>
-            <td>` + Address Here` + `</td>
-            <td>` + Listing Price Here` + </td>
+            <td> + currentListings[i[0]] + </td>
+            <td> + Address Here + </td>
+            <td> + Listing Price Here + </td>
         </tr>`
     ;
 }
