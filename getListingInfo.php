@@ -30,7 +30,7 @@ while ($row2 = $result2->fetch_array()) {
 }
 
 echo json_encode($data);
-echo json_encode($data2);
+echo $data2
 
 // Close the connection
 mysqli_close($conn);
