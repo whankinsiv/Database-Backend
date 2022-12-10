@@ -28,8 +28,8 @@ function populateRow(row) {
     tableBody.innerHTML += `
         <tr>
             <td> ${currentListings[row]["street_address"]} </td>
-            <td> ${name} </td>
-            <td> ${name} </td>
+            <td> ${currentListings[row]["city"]} </td>
+            <td> ${currentListings[row]["State"]} </td>
         </tr>`
     ;
 }
