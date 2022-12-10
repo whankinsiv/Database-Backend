@@ -1,5 +1,5 @@
 const listingPopup = document.getElementById("showListingPopup");
-
+var clickedListingInfo
 // Function for when an individual listing is clicked.
 function listingClicked(house_id) {
     
@@ -17,8 +17,9 @@ function getListingData(house_id) {
     .then(data => {
     
     // Set Global variable for all current listings. 
-    currentListingsOrdered = data;
-    console.log(currentListingsOrdered);
+    clickedListingInfo = data;
+    console.log(clickedListingInfo);
+    }
 
 }
 
