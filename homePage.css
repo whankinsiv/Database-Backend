@@ -23,6 +23,7 @@ th {
 
 tr {
     height: 60px;
+    justify-content: center;
 }
 
 #listingTableHeader {
