@@ -16,6 +16,7 @@ async function listingClicked(house_id) {
     var state = clickedListingInfo[0]['State'];
     var city = clickedListingInfo[0]['city'];
     
+    var sqft = clickedListingInfo[0]['square_feet'];
     var bedroomCount = clickedListingInfo[0]['bedroom_count'];
     var bathroomCount = clickedListingInfo[0]['bathroom_count'];
 
@@ -27,7 +28,8 @@ async function listingClicked(house_id) {
     listingPopupHeader.innerHTML += "<div>$" + askingPrice + "<\div>";
     
     // Populate showingListingPopupBody
-    listingPopupBody.innerHTML = "<div>Bedrooms: " + bedroomCount + "<\div>";
+    listingPopupBody.innerHTML = "<div>sqft: " += sqft + "<\div>";
+    listingPopupBody.innerHTML = "<div>Bedrooms: " += bedroomCount + "<\div>";
     listingPopupBody.innerHTML += "<div>Bathrooms: " + bathroomCount + "<\div>";
     
     // Make Popup visable
