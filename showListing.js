@@ -9,6 +9,7 @@ async function listingClicked(house_id) {
     
     // Get listing information from the database using the house_id
     await getListingData(house_id);
+    console.log(clickedListingInfo);
     
     // Populate showingListingPopup
     listingPopupHeader.innerHTML = clickedListingInfo["nearest_school"];
