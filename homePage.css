@@ -150,6 +150,7 @@ tr {
     max-width: 1200px;
     z-index: 4;
     min-height: 200px;
+    margin: 5% 10%;
 }
 
 #showListingPopupHeader {
@@ -163,7 +164,6 @@ tr {
 #showListingPopupBody {
     display: flex;
     justify-content: space-between;
-    margin: 5% 10%;
 }
 
 #showListingPopupInfo {
@@ -175,10 +175,6 @@ tr {
 #showListingPopupHistory {
     display: flex;
     flex-direction: column;
-}
-
-#showListingPopupFooter {
-    padding: 3%;
 }
 
 #overlay {
