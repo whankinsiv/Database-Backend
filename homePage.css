@@ -148,7 +148,8 @@ tr {
 }
 
 #showListingPopupHeader {
-    padding: 20% 20%;
+    margin-left: 10%;
+    margin-right:10%;
     display: flex;
     justify-content: space-between;
 }
