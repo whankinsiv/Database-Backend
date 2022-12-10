@@ -14,7 +14,6 @@ if ($conn->connect_error) {
 
 // Get house_id variable from JS
 $house_id = $_REQUEST["house_id"];
-echo $house_id . "\n";
 
 // Get the listing information from the house_id
 $query = "SELECT current_listings.house_id, asking_price, street_address, city, State FROM current_listings INNER JOIN house ON current_listings.house_id = house.house_id";
