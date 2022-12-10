@@ -9,13 +9,13 @@ function listingClicked(house_id) {
     
     // Get listing information from the database using the house_id
     getListingData(house_id);
-    console.log(clickedListingInfo);
     
     // Populate showingListingPopup
     listingPopupHeader.innerHTML = clickedListingInfo;
     
     listingPopup.classList.add('active');
     overlay.classList.add('active');
+    console.log(clickedListingInfo);
 }
 
 // Function to query database for listing info based on house_id
