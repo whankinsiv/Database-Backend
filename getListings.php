@@ -17,7 +17,7 @@ $result = $conn->query($query);
 
 // Process the result
 while ($row = $result->fetch_array()) {
-  $data[] = $row
+  $data[] = $row;
 }
 echo json_encode($data);
 
