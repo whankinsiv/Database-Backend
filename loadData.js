@@ -1,11 +1,22 @@
 var currentListings
+var currentListingsOrdered
 // Function to pull listings from the database
 function loadData() {
   console.log("Getting listings from DB");
   fetch('/getListings.php')
     .then(response => response.json())
     .then(data => {
-    currentListings = data;
+    currentListingsOrdered = data;
+    currentListings = currentListingsOrdered;
+    
+   /* Randomize array in-place using Durstenfeld shuffle algorithm */
+   for (var i = currentListings.length - 1; i > 0; i--) {
+       var j = Math.floor(Math.random() * (i + 1));
+       var temp = currentListings[i];
+       currentListings[i] = currentListings[j];
+       currentListings[j] = temp;
+   }
+    
     // Populate listings table with data
     populateTable(currentListings.length);
   });
