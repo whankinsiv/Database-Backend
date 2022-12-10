@@ -30,7 +30,3 @@ function populateRow(row) {
         </tr>`
     ;
 }
-
-function listingClicked(house_id) {
-  console.log(house_id + " Clicked");
-}
