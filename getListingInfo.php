@@ -16,7 +16,7 @@ if ($conn->connect_error) {
 $house_id = $_REQUEST["house_id"];
 
 // Get the listing information from the house_id
-$query = "SELECT * FROM current_listings INNER JOIN house ON current_listings.house_id = house.house_id INNER JOIN agent ON current_listings.agent_id = agent.agent_id WHERE house.house_id = '" . $house_id . "'";
+$query = "SELECT * FROM current_listings INNER JOIN house ON current_listings.house_id = house.house_id INNER JOIN agent ON current_listings.agent_id = agent.agent_id INNER JOIN prior_listings.house_id = " . $house_id . " WHERE house.house_id = '" . $house_id . "'";
 $result = $conn->query($query);
 
 while ($row = $result->fetch_array()) {
