@@ -28,9 +28,9 @@ $result2 = $conn->query($query2);
 while ($row2 = $result2->fetch_array()) {
   $data2[] = $row2;
 }
-$array_push($data, $data2);
+$merged_array = array_merge($data, $data2);
 
-echo json_encode($data);
+echo json_encode($merged_array);
 
 // Close the connection
 mysqli_close($conn);
