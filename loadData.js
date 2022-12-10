@@ -27,7 +27,7 @@ function populateRow(row) {
     var name = "test";
     tableBody.innerHTML += `
         <tr>
-            <td> ${currentListings[row[0]]} </td>
+            <td> ${currentListings[row]} </td>
             <td> ${name} </td>
             <td> ${name} </td>
         </tr>`
