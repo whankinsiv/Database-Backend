@@ -157,6 +157,7 @@ tr {
     margin-right:10%;
     display: flex;
     justify-content: space-between;
+    font-weight: bold;
 }
 
 #showListingPopupBody {
