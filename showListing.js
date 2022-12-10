@@ -34,7 +34,7 @@ async function listingClicked(house_id) {
         listingPopupBody.innerHTML += "<div>Bedrooms: " + bedroomCount + "<\div>";
         listingPopupBody.innerHTML += "<div>Bathrooms: " + bathroomCount + "<\div>";
 
-    listingPopupBody.innerHTML += "<\div>;
+    listingPopupBody.innerHTML += "<\div>";
     
     // Create div for right side of listingPopupBody
     listingPopupBody.innerHTML += "<div id='pastListings'>";
