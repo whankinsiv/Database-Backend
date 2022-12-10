@@ -11,8 +11,8 @@ async function listingClicked(house_id) {
     let test = await getListingData(house_id);
     
     // Populate showingListingPopup
-    console.log(clickedListingInfo[0]['State']);
-    listingPopupHeader.innerHTML = clickedListingInfo[0]['State'];
+    var state = clickedListingInfo[0]['State'];
+    listingPopupHeader.innerHTML = state;
     
     listingPopup.classList.add('active');
     overlay.classList.add('active');
