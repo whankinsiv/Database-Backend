@@ -41,7 +41,7 @@ async function listingClicked(house_id) {
         // Populate past sales
         listingPopupBody.innerHTML += "<div>Bathrooms: " + bathroomCount + "<\div>";
     
-    listingPopupBody.innerHTML += "<\div>;
+    listingPopupBody.innerHTML += "<\div>";
     
     // Make Popup visable
     listingPopup.classList.add('active');
