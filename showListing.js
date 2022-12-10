@@ -13,7 +13,6 @@ async function listingClicked(house_id) {
     
     // Get listing information from the database using the house_id
     clickedListingInfo = await getListingData(house_id);
-    console.log(clickedListingInfo);
     
     // Collect variables from JSON
     var address = clickedListingInfo[0]['street_address'];
@@ -59,6 +58,7 @@ async function getListingData(house_id) {
     
     // Set Global variable  holding currently clicked listing info. 
     clickedListingInfo = data;
+    console.log(clickedListingInfo);
     return clickedListingInfo;
     });
 }
