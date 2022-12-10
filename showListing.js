@@ -53,7 +53,7 @@ async function listingClicked(house_id) {
 async function getListingData(house_id) {
     var script = "/getListingInfo.php?house_id=" + encodeURIComponent(house_id);
     await fetch(script)
-    .then(response => await response.json())
+    .then(response => response.json())
     .then(data => {
     
     // Set Global variable  holding currently clicked listing info. 
