@@ -28,6 +28,7 @@ async function listingClicked(house_id) {
     var listDate = clickedListingInfo[0]['market_enter_date'];
     var listAgent = clickedListingInfo[0]['agent_name'];
     var listBrokerage = clickedListingInfo[0]['firm_name'];
+    var licenseNumber = clickedListingInfo[0]['licence_reference_number'];
     
     
     // Populate showingListingPopupHeader
@@ -45,7 +46,7 @@ async function listingClicked(house_id) {
     listingPopupHistory.innerHTML += "<div>Put past listings w/ same house id here<\div>";
 
     // Populate footer
-    listingPopupFooter.innerHTML = "<div>Listed " + listDate + " by " + listAgent + " of " + listBrokerage + "</div>";
+    listingPopupFooter.innerHTML = "<div>Listed " + listDate + " by " + listAgent + ". License #: " + licenseNumber + "</div><div>List Brokerage: " + listBrokerage + "</div>;
     
     // Make Popup visable
     listingPopup.classList.add('active');
