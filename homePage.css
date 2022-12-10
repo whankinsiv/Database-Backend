@@ -162,6 +162,7 @@ tr {
 #showListingPopupBody {
     display: flex;
     justify-content: space-between;
+    margin: 5% 10%;
 }
 
 #showListingPopupInfo {
