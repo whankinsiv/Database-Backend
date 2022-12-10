@@ -19,7 +19,7 @@ function getListingData(house_id) {
     // Set Global variable for all current listings. 
     clickedListingInfo = data;
     console.log(clickedListingInfo);
-    }
+    });
 
 }
 
