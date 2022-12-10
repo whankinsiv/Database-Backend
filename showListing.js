@@ -11,7 +11,7 @@ async function listingClicked(house_id) {
     // Get listing information from the database using the house_id
     let test = await getListingData(house_id);
     
-    // Populate showingListingPopup
+    // Collect variables from JSON
     var state = clickedListingInfo[0]['State'];
     var city = clickedListingInfo[0]['city'];
     
@@ -20,10 +20,15 @@ async function listingClicked(house_id) {
 
     var askingPrice = clickedListingInfo[0]['asking_price'];
     var listDate = clickedListingInfo[0]['market_enter_date'];
-    clickedListingInfo[0]['State']
-    clickedListingInfo[0]['State']
+    
+    // Populate showingListingPopupHeader
     listingPopupHeader.innerHTML = state;
     
+    // Populate showingListingPopupBody
+    listingPopupBody.innerHTML = "Bathrooms: " + bathroomCount;
+    listingPopupBody.innerHTML = "Bedrooms: " + bedroomCount
+    
+    // Make Popup visable
     listingPopup.classList.add('active');
     overlay.classList.add('active');
 }
