@@ -164,7 +164,7 @@ tr {
 }
 
 #propertyInfo {
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
