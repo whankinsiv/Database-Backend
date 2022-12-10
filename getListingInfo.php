@@ -28,9 +28,9 @@ $result2 = $conn->query($query2);
 while ($row2 = $result2->fetch_array()) {
   $data2[] = $row2;
 }
+$data[] += $data2;
 
 echo json_encode($data);
-echo $data2
 
 // Close the connection
 mysqli_close($conn);
