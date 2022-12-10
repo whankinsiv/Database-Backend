@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 }
 
 // Get house_id variable from JS
-$house_id = $_GET["house_id"];
+$house_id = $_REQUEST["house_id"];
 echo $house_id;
 
 // Get the listing information from the house_id
