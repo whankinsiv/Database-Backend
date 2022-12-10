@@ -11,7 +11,7 @@ function listingClicked(house_id) {
     getListingData(house_id);
     
     // Populate showingListingPopup
-    listingPopupHeader.innerHTML = clickedListingInfo;
+    //listingPopupHeader.innerHTML = clickedListingInfo;
     
     listingPopup.classList.add('active');
     overlay.classList.add('active');
