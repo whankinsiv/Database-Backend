@@ -24,7 +24,11 @@ async function listingClicked(house_id) {
     var bathroomCount = clickedListingInfo[0]['bathroom_count'];
 
     var askingPrice = clickedListingInfo[0]['asking_price'];
+    
     var listDate = clickedListingInfo[0]['market_enter_date'];
+    var listAgent = clickedListingInfo[0]['agent_name'];
+    var listBrokerage = clickedListingInfo[0]['firm_name'];
+    
     
     // Populate showingListingPopupHeader
     listingPopupHeader.innerHTML = "<div>" + address + " " + city + ", " + state + "<\div>";
@@ -42,7 +46,7 @@ async function listingClicked(house_id) {
 
     // Populate footer
     listingPopupFooter.innerHTML = "<div>List Date: " + listDate + "</div>";
-    listingPopupFooter.innerHTML += "<div></div>";
+    listingPopupFooter.innerHTML += "<div>Listed by " + listAgent + " of " + listBrokerage + "</div>";
     
     // Make Popup visable
     listingPopup.classList.add('active');
