@@ -163,6 +163,11 @@ tr {
     display: flex;
 }
 
+#propertyInfo {
+    display:flex;
+    flex-direction: column;
+}
+
 #overlay {
     position: fixed;
     opacity: 0;
