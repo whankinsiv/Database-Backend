@@ -28,7 +28,7 @@ async function listingClicked(house_id) {
     listingPopupHeader.innerHTML += "<div>$" + askingPrice + "<\div>";
     
     // Create div for left side of listingPopupBody
-    listingPopupBody.innerHTML = "<div id='Property Info'>"
+    listingPopupBody.innerHTML = "<div id='propertyInfo'>"
         // Populate property information
         listingPopupBody.innerHTML += "<div>sqft: " + sqft + "<\div>";
         listingPopupBody.innerHTML += "<div>Bedrooms: " + bedroomCount + "<\div>";
@@ -37,7 +37,7 @@ async function listingClicked(house_id) {
     listingPopupBody.innerHTML += "<\div>;
     
     // Create div for right side of listingPopupBody
-    listingPopupBody.innerHTML += "<div id='Property Info'>";
+    listingPopupBody.innerHTML += "<div id='pastListings'>";
         // Populate past sales
         listingPopupBody.innerHTML += "<div>Bathrooms: " + bathroomCount + "<\div>";
     
