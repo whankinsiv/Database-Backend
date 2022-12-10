@@ -25,6 +25,10 @@ tr {
     height: 80px;
 }
 
+#listingTableHeader {
+    height: 20px;
+}
+
 #header {
     height: 10vh;
     width: 100vw;
