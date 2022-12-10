@@ -155,7 +155,7 @@ tr {
 
 #showListingPopupHeader {
     margin-left: 10%;
-    margin-right:10%;
+    margin-right: 10%;
     display: flex;
     justify-content: space-between;
     font-weight: bold;
@@ -169,7 +169,6 @@ tr {
 #showListingPopupInfo {
     display: flex;
     flex-direction: column;
-    width: 50%;
 }
 
 #showListingPopupHistory {
