@@ -161,6 +161,15 @@ tr {
 
 #showListingPopupBody {
     display: flex;
+}
+
+#showListingPopupInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+#showListingPopupHistory {
+    display: flex;
     flex-direction: column;
 }
 
