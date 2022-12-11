@@ -23,6 +23,7 @@ function setFilter() {
     // Loop through the selected elements and get the text content
     let entryTexts = [];
     for (let entry of forumEntries) {
+      console.log(entry.innerHTML);
       entryTexts.push(entry.innerHTML);
     }
     
