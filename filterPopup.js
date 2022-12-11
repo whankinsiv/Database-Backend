@@ -19,16 +19,11 @@ setFilterButton.addEventListener('click', () => {
 
 // Function to produce reduced data array based on filter parameters 
 function setFilter() {
-    let forumEntries = document.querySelectorAll(".inputForum");
-    // Loop through the selected elements and get the text content
-    let entryTexts = [];
-    for (let entry of forumEntries) {
-      console.log(entry.innerHTML);
-      entryTexts.push(entry.innerHTML);
-    }
-    
-    console.log(entryTexts)
-    console.log("Setting Filter")
+    // Get Min Price entry
+    let minPriceForum = document.querySelector(".minPrice");
+    let minPrice = minPriceForum.value;
+    console.log(minPrice);
+    console.log("Setting Filter");
 }
 
 // Function to reset filter parameters
