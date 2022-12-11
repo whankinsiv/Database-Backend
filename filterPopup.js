@@ -20,6 +20,7 @@ setFilterButton.addEventListener('click', () => {
 
 minPriceForum.addEventListener("input", function() {
   minPrice = minPriceForum.value;
+  console.log(minPrice);
 });
 
 // Function to produce reduced data array based on filter parameters 
