@@ -20,7 +20,13 @@ setFilterButton.addEventListener('click', () => {
 // Function to produce reduced data array based on filter parameters 
 function setFilter() {
     let forumEntries = document.querySelectorAll(".inputForum");
-    console.log(forumEntries)
+    // Loop through the selected elements and get the text content
+    let entryTexts = [];
+    for (let entry of forumEntries) {
+      entryTexts.push(entry.innerHTML);
+    }
+    
+    console.log(entryTexts)
     console.log("Setting Filter")
 }
 
