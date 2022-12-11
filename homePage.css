@@ -71,6 +71,10 @@ tr {
     #title {
         width: 30vw;
     }
+    
+    #Header {
+        height: 5vh;
+    }
 
 }
 
