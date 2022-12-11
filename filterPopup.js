@@ -36,7 +36,7 @@ minBedsForum.addEventListener("input", function() {
 function setFilter() {
     console.log(currentListingsOrdered);
     for (let i=0; i < currentListingsOrdered.length - 1; i++) {
-        console.log(currentListingsOrdered[0]["asking_price"]);
+        console.log(currentListingsOrdered[i]["asking_price"]);
     }
     console.log("Min Price: " + minPrice);
     console.log("Max Price: " + maxPrice);
