@@ -42,7 +42,7 @@ function setFilter() {
         let j = 0
         for (let i=0; i < currentListingsOrdered.length - 1; i++) {
             if (currentListingsOrdered[i]["asking_price"] >= minPrice) {
-                filteredArray[j] = currentListingsOrdered[i]
+                filteredArray.push(currentListingsOrdered[i])
                 j++;
             }
         }
