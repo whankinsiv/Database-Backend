@@ -19,6 +19,7 @@ setFilterButton.addEventListener('click', () => {
 
 // Function to produce reduced data array based on filter parameters 
 function setFilter() {
+    console.log("Setting Filter")
 }
 
 // Function to reset filter parameters
