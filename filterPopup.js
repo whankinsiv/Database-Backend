@@ -25,11 +25,11 @@ minPriceForum.addEventListener("input", function() {
 });
 
 maxPriceForum.addEventListener("input", function() {
-  minPrice = minPriceForum.value;
+  maxPrice = maxPriceForum.value;
 });
 
 minBedsForum.addEventListener("input", function() {
-  minPrice = minPriceForum.value;
+  minBeds = minBedsForum.value;
 });
 
 // Function to produce reduced data array based on filter parameters 
