@@ -3,6 +3,7 @@ const setFilterButton = document.getElementById("setFilter")
 const resetFilterButton = document.getElementById("resetFilter")
 const overlay = document.getElementById('overlay')
 const filterPopup = document.getElementById('filterPopup')
+const minPriceForum = document.getElementById('minPrice')
 
 filterButton.addEventListener('click', () => {
     openFilterPopup()
@@ -17,11 +18,12 @@ setFilterButton.addEventListener('click', () => {
     setFilter()
 })
 
+minPriceForum.addEventListener("input", function() {
+  minPrice = minPriceForum.value;
+});
+
 // Function to produce reduced data array based on filter parameters 
 function setFilter() {
-    // Get Min Price entry
-    let minPriceForum = document.querySelector(".minPrice");
-    let minPrice = minPriceForum.value;
     console.log(minPrice);
     console.log("Setting Filter");
 }
