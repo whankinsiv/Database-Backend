@@ -6,6 +6,7 @@ const filterPopup = document.getElementById('filterPopup')
 const minPriceForum = document.getElementById('minPrice')
 const maxPriceForum = document.getElementById('maxPrice')
 const minBedsForum = document.getElementById('minBeds')
+const filteredArray
 
 filterButton.addEventListener('click', () => {
     openFilterPopup()
@@ -37,15 +38,17 @@ function setFilter() {
     console.log(currentListingsOrdered);
     // Filter by Min Price
     if (minPrice.length > 0) {
-        console.log("Min price has value");
+        for (let i=0; i < currentListingsOrdered.length - 1; i++) {
+            if (currentListingsOrdered[i]["asking_price"] >= minPrice) {
+                filteredArray[] = currentListingsOrdered[i]
+            }
+        }
+        console.log(filteredArray);
     }
     else {
         console.log("NO VALUE");
     }
     /*
-    for (let i=0; i < currentListingsOrdered.length - 1; i++) {
-        console.log(currentListingsOrdered[i]["asking_price"]);
-    }
     */
     console.log("Min Price: " + minPrice);
     console.log("Max Price: " + maxPrice);
