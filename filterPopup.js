@@ -35,7 +35,7 @@ function openFilterPopup() {
 
 // Function to close the popup
 function closeFilterPopup() {
-    setFilterPopup()
+    setFilter()
     filterPopup.classList.remove('active')
     overlay.classList.remove('active')
 }
