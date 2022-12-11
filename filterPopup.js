@@ -36,7 +36,7 @@ minBedsForum.addEventListener("input", function() {
 function setFilter() {
     console.log(currentListingsOrdered);
     // Filter by Min Price
-    if (minPrice != null) {
+    if (minPrice.length > 0) {
         console.log("Min price has value");
     }
     
