@@ -4,6 +4,8 @@ const resetFilterButton = document.getElementById("resetFilter")
 const overlay = document.getElementById('overlay')
 const filterPopup = document.getElementById('filterPopup')
 const minPriceForum = document.getElementById('minPrice')
+const maxPriceForum = document.getElementById('maxPrice')
+const minBedsForum = document.getElementById('minBeds')
 
 filterButton.addEventListener('click', () => {
     openFilterPopup()
@@ -20,12 +22,21 @@ setFilterButton.addEventListener('click', () => {
 
 minPriceForum.addEventListener("input", function() {
   minPrice = minPriceForum.value;
-  console.log(minPrice);
+});
+
+maxPriceForum.addEventListener("input", function() {
+  minPrice = minPriceForum.value;
+});
+
+minBedsForum.addEventListener("input", function() {
+  minPrice = minPriceForum.value;
 });
 
 // Function to produce reduced data array based on filter parameters 
 function setFilter() {
-    console.log(minPrice);
+    console.log("Min Price: " + minPrice);
+    console.log("Max Price: " + maxPrice);
+    console.log("Min Beds: " + minBeds);
     console.log("Setting Filter");
 }
 
