@@ -39,9 +39,9 @@ function setFilter() {
     console.log(currentListingsOrdered[1]);
     // Filter by Min Price
     if (minPrice.length > 0) {
+        let j = 0
         for (let i=0; i < currentListingsOrdered.length - 1; i++) {
             if (currentListingsOrdered[i]["asking_price"] >= minPrice) {
-                let j = 0
                 filteredArray[j] = currentListingsOrdered[i]
                 j++;
             }
