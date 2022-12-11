@@ -19,6 +19,8 @@ setFilterButton.addEventListener('click', () => {
 
 // Function to produce reduced data array based on filter parameters 
 function setFilter() {
+    let forumEntries = document.querySelectorAll(".inputForum");
+    console.log(fourmEntries)
     console.log("Setting Filter")
 }
 
