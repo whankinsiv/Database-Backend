@@ -14,12 +14,11 @@ resetFilterButton.addEventListener('click', () => {
 })
 
 setFilterButton.addEventListener('click', () => {
-    closeFilterPopup()
+    setFilter()
 })
 
 // Function to produce reduced data array based on filter parameters 
 function setFilter() {
-    
 }
 
 // Function to reset filter parameters
