@@ -39,10 +39,14 @@ function setFilter() {
     if (minPrice.length > 0) {
         console.log("Min price has value");
     }
-    
+    else {
+        console.log("NO VALUE");
+    }
+    /*
     for (let i=0; i < currentListingsOrdered.length - 1; i++) {
         console.log(currentListingsOrdered[i]["asking_price"]);
     }
+    */
     console.log("Min Price: " + minPrice);
     console.log("Max Price: " + maxPrice);
     console.log("Min Beds: " + minBeds);
