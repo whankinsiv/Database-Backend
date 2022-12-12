@@ -28,8 +28,7 @@ tr {
 }
 
 tr:hover {
-    border-top-color: white;
-    border-color: #404040;
+    background-color: #181818;
 }
 
 a:link {
