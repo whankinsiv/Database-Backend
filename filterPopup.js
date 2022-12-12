@@ -72,10 +72,10 @@ function setFilter() {
     else {
         filteredArray2 = filteredArray1
     }
-    console.log(filteredArray2)
+
     // Filter by Min Beds
     if (minBeds.length > 0) {
-        for (let k=0; k < filteredArray1.length; k++) {
+        for (let k=0; k < filteredArray2.length; k++) {
             if (filteredArray2[k]["bedroom_count"] >= minBeds) {
                 filteredArray3.push(filteredArray2[k])
             }
