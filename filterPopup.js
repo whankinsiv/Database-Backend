@@ -76,7 +76,8 @@ function setFilter() {
     // Filter by Min Beds
     if (minBeds.length > 0) {
         for (let k=0; k < filteredArray2.length; k++) {
-            if (filteredArray2[k]["bedroom_count"] >= minBeds) {
+            let count = filteredArray2[k]["bedroom_count"]
+            if (count >= minBeds) {
                 filteredArray3.push(filteredArray2[k])
             }
         }
