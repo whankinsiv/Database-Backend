@@ -60,7 +60,7 @@ function setFilter() {
     }
     
     // Filter by Max Price
-    if (maxPrice.length( > 0 ) {
+    if (maxPrice.length > 0) {
         let l = 0
         for (let k=0; k < filteredArray1.length - 1; k++) {
             if (filteredArray1[i]["asking_price"] <= maxPrice) {
