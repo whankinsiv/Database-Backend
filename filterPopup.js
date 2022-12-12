@@ -97,7 +97,12 @@ function updateListings(filteredArray) {
 
 // Function to reset filter parameters
 function resetFilter() {
-
+    var tableBody = document.querySelector("tbody");
+    tableBody.innerHTML = ``;
+    minPriceForum = ''
+    maxPriceForum = ''
+    minBedsForum = ''
+    populateTable(currentListings);
 }
 
 // Function to open popup when filter button is pushed
