@@ -56,7 +56,7 @@ function setFilter() {
     
     // Filter by Max Price
     if (maxPrice.length > 0) {
-        for (let j=0; j < filteredArray1.length - 1; j++) {
+        for (let j=0; j < filteredArray1.length; j++) {
             if (filteredArray1[j]["asking_price"] <= maxPrice) {
                 filteredArray2.push(filteredArray1[j])
             }
@@ -64,7 +64,7 @@ function setFilter() {
     }
     // If Max Price is empty push entire filteredArray1
     else {
-        for (let j=0; j < filteredArray1.length - 1; j++) {
+        for (let j=0; j < filteredArray1.length; j++) {
             filteredArray2.push(filteredArray1[j])
         }
     }
@@ -84,7 +84,7 @@ function setFilter() {
 function updateListings(filteredArray) {
     var tableBody = document.querySelector("tbody");
     tableBody.innerHTML = ``;
-    for (let i=0; i < filteredArray.length -1; i++) {
+    for (let i=0; i < filteredArray.length; i++) {
         tableBody.innerHTML += `
         <tr onclick="listingClicked(${filteredArray[i]["house_id"]});">
             <td> ${filteredArray[i]["street_address"]} </td>
