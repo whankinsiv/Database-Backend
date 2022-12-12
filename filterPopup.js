@@ -75,6 +75,7 @@ function setFilter() {
             filteredArray2.push(filteredArray1[k])
         }
     }
+    console.log(filteredArray1);
     console.log(filteredArray2);
 
     /*
