@@ -43,11 +43,9 @@ function setFilter() {
     console.log(currentListingsOrdered[1]);
     // Filter by Min Price
     if (minPrice.length > 0) {
-        let j = 0
         for (let i=0; i < currentListingsOrdered.length - 1; i++) {
             if (currentListingsOrdered[i]["asking_price"] >= minPrice) {
                 filteredArray1.push(currentListingsOrdered[i])
-                j++;
             }
         }
         console.log(filteredArray);
@@ -61,18 +59,16 @@ function setFilter() {
     
     // Filter by Max Price
     if (maxPrice.length > 0) {
-        let l = 0
-        for (let k=0; k < filteredArray1.length - 1; k++) {
-            if (filteredArray1[k]["asking_price"] <= maxPrice) {
-                filteredArray2.push(filteredArray1[l])
-                l++;
+        for (let j=0; j < filteredArray1.length - 1; j++) {
+            if (filteredArray1[j]["asking_price"] <= maxPrice) {
+                filteredArray2.push(filteredArray1[j])
             }
         }
     }
     // If Max Price is empty push entire filteredArray1
     else {
-        for (let k=0; k < filteredArray1.length - 1; k++) {
-            filteredArray2.push(filteredArray1[k])
+        for (let j=0; j < filteredArray1.length - 1; j++) {
+            filteredArray2.push(filteredArray1[j])
         }
     }
     console.log(filteredArray1);
