@@ -19,6 +19,7 @@ resetFilterButton.addEventListener('click', () => {
 
 setFilterButton.addEventListener('click', () => {
     setFilter()
+    closeFilterPopup()
 })
 
 minPriceForum.addEventListener("input", function() {
