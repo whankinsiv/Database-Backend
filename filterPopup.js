@@ -63,16 +63,16 @@ function setFilter() {
     if (maxPrice.length > 0) {
         let l = 0
         for (let k=0; k < filteredArray1.length - 1; k++) {
-            if (filteredArray1[i]["asking_price"] <= maxPrice) {
-                filteredArray2.push(filteredArray1[i])
-                j++;
+            if (filteredArray1[k]["asking_price"] <= maxPrice) {
+                filteredArray2.push(filteredArray1[l])
+                l++;
             }
         }
     }
     // If Max Price is empty push entire filteredArray1
     else {
-        for (let i=0; i < filteredArray1.length - 1; i++) {
-            filteredArray2.push(filteredArray1[i])
+        for (let k=0; k < filteredArray1.length - 1; k++) {
+            filteredArray2.push(filteredArray1[k])
         }
     }
     console.log(filteredArray2);
