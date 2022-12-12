@@ -35,6 +35,7 @@ minBedsForum.addEventListener("input", function() {
 
 // Function to produce reduced data array based on filter parameters 
 function setFilter() {
+    filteredArray = []
     console.log(currentListingsOrdered);
     console.log(currentListingsOrdered[1]);
     // Filter by Min Price
