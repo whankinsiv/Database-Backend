@@ -21,6 +21,7 @@ async function listingClicked(house_id) {
     var sqft = clickedListingInfo[0]['square_feet'];
     var bedroomCount = clickedListingInfo[0]['bedroom_count'];
     var bathroomCount = clickedListingInfo[0]['bathroom_count'];
+    var pool = clickedListingInfo[0]['pool'];
     var nearestSchool = clickedListingInfo[0]['nearest_school'];
 
     var askingPrice = clickedListingInfo[0]['asking_price'];
@@ -42,7 +43,8 @@ async function listingClicked(house_id) {
     listingPopupInfo.innerHTML += "<div>sqft: " + sqft + "<\div>";
     listingPopupInfo.innerHTML += "<div>Bedrooms: " + bedroomCount + "<\div>";
     listingPopupInfo.innerHTML += "<div>Bathrooms: " + bathroomCount + "<\div>";
-    listingPopupInfo.innerHTML += "<div>Closest College: " + nearestSchool + "<\div>";
+    listingPopupInfo.innerHTML += "<div>Pool: " + pool + "<\div>";
+    listingPopupInfo.innerHTML += "<div>Closest High School: " + nearestSchool + "<\div>";
 
     // Populate footer
     listingPopupFooter.innerHTML = "<div>Listed " + listDate + " by " + listAgent + ".</div>"; 
