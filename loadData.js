@@ -39,12 +39,12 @@ function populateTable(numOfEntries) {
 function populateRow(row) {
     var tableBody = document.querySelector("tbody");
     let askingPriceInt = parseInt(currentListings[row]["asking_price"])
-    let AskingPriceFormated = askingPriceInt.toLocaleString()
+    let askingPriceFormated = askingPriceInt.toLocaleString()
     tableBody.innerHTML += `
         <tr onclick="listingClicked(${currentListings[row]["house_id"]});">
             <td> ${currentListings[row]["street_address"]} </td>
             <td> ${currentListings[row]["city"]}, ${currentListings[row]["State"]} </td>
-            <td> $${AskingPriceFormated} </td>
+            <td> $${askingPriceFormated} </td>
         </tr>`
     ;
 }
