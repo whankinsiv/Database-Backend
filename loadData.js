@@ -44,7 +44,7 @@ function populateRow(row) {
         <tr onclick="listingClicked(${currentListings[row]["house_id"]});">
             <td> ${currentListings[row]["street_address"]} </td>
             <td> ${currentListings[row]["city"]}, ${currentListings[row]["State"]} </td>
-            <td> ${AskingPriceFormated} </td>
+            <td> $${AskingPriceFormated} </td>
         </tr>`
     ;
 }
