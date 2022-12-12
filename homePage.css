@@ -31,6 +31,10 @@ a:link {
   color: lightgrey;
 }
 
+a:visited {
+  color: lightgrey;
+}
+
 a:hover {
   color: white;
 }
