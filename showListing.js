@@ -23,6 +23,7 @@ async function listingClicked(house_id) {
     var bathroomCount = clickedListingInfo[0]['bathroom_count'];
     var garageSize = clickedListingInfo[0]['garage_size'];
     var pool = clickedListingInfo[0]['pool'];
+    var guestHouse = clickedListingInfo[0]['detached_house'];
     var solarInstalled = clickedListingInfo[0]['solar_installed'];
     var heatingType = clickedListingInfo[0]['heating_type'];
     var coolingType = clickedListingInfo[0]['cooling_type'];
