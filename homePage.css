@@ -67,6 +67,7 @@ button {
 }
 
 #title {
+    margin-left: 3vw;
     min-width: 93px;
     width: 10vw;
     text-align: center;
