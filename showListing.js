@@ -23,7 +23,9 @@ async function listingClicked(house_id) {
     var bathroomCount = clickedListingInfo[0]['bathroom_count'];
     var garageSize = clickedListingInfo[0]['garage_size'];
     var pool = clickedListingInfo[0]['pool'];
+    var solarInstalled = clickedListingInfo[0]['solar_installed'];
     var heatingType = clickedListingInfo[0]['heating_type'];
+    var coolingType = clickedListingInfo[0]['cooling_type'];
     var nearestSchool = clickedListingInfo[0]['nearest_school'];
 
     var askingPrice = clickedListingInfo[0]['asking_price'];
@@ -46,7 +48,9 @@ async function listingClicked(house_id) {
     listingPopupInfo.innerHTML += "<div>Bedrooms: " + bedroomCount + "<\div>";
     listingPopupInfo.innerHTML += "<div>Bathrooms: " + bathroomCount + "<\div>";
     listingPopupInfo.innerHTML += "<div>Garage Size: " + garageSize + "<\div>";
+    listingPopopInfo.innerHTML += "<div>Solar Installed: " + solarInstalled + "<\div>";
     listingPopupInfo.innerHTML += "<div>Heating Type: " + heatingType + "<\div>";
+    listingPopupInfo.innerHTML += "<div>Cooling Type: " + coolingType + "<\div>";
     listingPopupInfo.innerHTML += "<div>Pool: " + pool + "<\div>";
     listingPopupInfo.innerHTML += "<div>Closest High School: " + nearestSchool + "<\div>";
 
