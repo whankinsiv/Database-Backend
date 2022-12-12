@@ -86,6 +86,7 @@ function setFilter() {
         filteredArray3 = filteredArray2
     }
     
+    console.log(filteredArray3)
     
     // Set the main filter array after completing all filtering
     filteredArray = filteredArray3
