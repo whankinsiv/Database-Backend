@@ -22,6 +22,7 @@ async function listingClicked(house_id) {
     var bedroomCount = clickedListingInfo[0]['bedroom_count'];
     var bathroomCount = clickedListingInfo[0]['bathroom_count'];
     var pool = clickedListingInfo[0]['pool'];
+    var heatingType = clickedListingInfo[0]['heating_type'];
     var nearestSchool = clickedListingInfo[0]['nearest_school'];
 
     var askingPrice = clickedListingInfo[0]['asking_price'];
@@ -43,6 +44,7 @@ async function listingClicked(house_id) {
     listingPopupInfo.innerHTML += "<div>sqft: " + sqft + "<\div>";
     listingPopupInfo.innerHTML += "<div>Bedrooms: " + bedroomCount + "<\div>";
     listingPopupInfo.innerHTML += "<div>Bathrooms: " + bathroomCount + "<\div>";
+    listingPopupInfo.innerHTML += "<div>Heating Type: " + heatingType + "<\div>";
     listingPopupInfo.innerHTML += "<div>Pool: " + pool + "<\div>";
     listingPopupInfo.innerHTML += "<div>Closest High School: " + nearestSchool + "<\div>";
 
