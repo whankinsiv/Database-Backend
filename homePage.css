@@ -91,7 +91,7 @@ tr {
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     border: 1px solid black;
-    background-color: lightgrey;
+    background-color: #282828;
     border-radius: 10px;
     width: 80%;
     max-width: 800px;
@@ -124,7 +124,7 @@ tr {
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     border: 1px solid black;
-    background-color: lightgrey;
+    background-color: #282828;
     border-radius: 10px;
     width: 80%;
     max-width: 800px;
@@ -150,7 +150,7 @@ tr {
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     border: 1px solid black;
-    background-color: lightgrey;
+    background-color: #282828;
     border-radius: 10px;
     width: 80%;
     max-width: 1200px;
@@ -196,7 +196,7 @@ tr {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: black;
+    background-color: white;
     pointer-events: none;
 }
 
