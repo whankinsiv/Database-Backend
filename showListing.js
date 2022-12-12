@@ -32,8 +32,10 @@ async function listingClicked(house_id) {
     
     
     // Populate showingListingPopupHeader
+    let askingPriceInt = parseInt(askingPrice)
+    let AskingPriceFormated = askingPriceInt.toLocaleString()
     listingPopupHeader.innerHTML = "<div>" + address + " " + city + ", " + state + "<\div>";
-    listingPopupHeader.innerHTML += "<div>$" + askingPrice + "<\div>";
+    listingPopupHeader.innerHTML += "<div>$" + askingPriceFormated + "<\div>";
     
     // Populate property information
     listingPopupInfo.innerHTML = "Property Info:";
