@@ -27,6 +27,7 @@ async function listingClicked(house_id) {
     var solarInstalled = clickedListingInfo[0]['solar_installed'];
     var heatingType = clickedListingInfo[0]['heating_type'];
     var coolingType = clickedListingInfo[0]['cooling_type'];
+    var streetParking = clickedListingINfo[0]['street_parking'];
     var nearestSchool = clickedListingInfo[0]['nearest_school'];
 
     var askingPrice = clickedListingInfo[0]['asking_price'];
@@ -50,10 +51,11 @@ async function listingClicked(house_id) {
     listingPopupInfo.innerHTML += "<div>Bathrooms: " + bathroomCount + "<\div>";
     listingPopupInfo.innerHTML += "<div>Garage Size: " + garageSize + "<\div>";
     listingPopupInfo.innerHTML += "<div>Solar Installed: " + solarInstalled + "<\div>";
+    listingPopupInfo.innerHTML += "<div>Guest House: " + guestHouse + "<\div>";
+    listingPopupInfo.innerHTML += "<div>Pool: " + pool + "<\div>";
+    listingPopupInfo.innerHTML += "<div>Street Parking: " + streetParking + "<\div>";
     listingPopupInfo.innerHTML += "<div>Heating Type: " + heatingType + "<\div>";
     listingPopupInfo.innerHTML += "<div>Cooling Type: " + coolingType + "<\div>";
-    listingPopupInfo.innerHTML += "<div>Pool: " + pool + "<\div>";
-    listingPopupInfo.innerHTML += "<div>Guest House: " + guestHouse + "<\div>";
     listingPopupInfo.innerHTML += "<div>Closest High School: " + nearestSchool + "<\div>";
 
     // Populate footer
