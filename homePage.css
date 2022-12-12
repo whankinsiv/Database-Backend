@@ -29,14 +29,17 @@ tr {
 
 a:link {
   color: lightgrey;
+  text-decoration: none;
 }
 
 a:visited {
   color: lightgrey;
+  text-decoration: none;
 }
 
 a:hover {
   color: white;
+  text-decoration: none;
 }
 
 #listingTableHeader {
