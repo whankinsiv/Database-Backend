@@ -39,8 +39,6 @@ function setFilter() {
     let filteredArray1 = []
     let filteredArray2 = []
     let filteredArray3 = []
-    console.log(currentListingsOrdered);
-    console.log(currentListingsOrdered[1]);
     // Filter by Min Price
     if (minPrice.length > 0) {
         for (let i=0; i < currentListingsOrdered.length - 1; i++) {
@@ -48,7 +46,6 @@ function setFilter() {
                 filteredArray1.push(currentListingsOrdered[i])
             }
         }
-        console.log(filteredArray);
     } 
     // If Min Price is empty push the entire currentListingsOrdered array to filteredArray
     else {
@@ -71,15 +68,31 @@ function setFilter() {
             filteredArray2.push(filteredArray1[j])
         }
     }
+    
+    
+    // Set the main filter array after completing all filtering
+    filteredArray = filteredArray2
+    
+    // Update home page listings based on new array
+    updateListings(filteredArray)
+    
     console.log(filteredArray1);
     console.log(filteredArray2);
+}
 
-    /*
-    */
-    console.log("Min Price: " + minPrice);
-    console.log("Max Price: " + maxPrice);
-    console.log("Min Beds: " + minBeds);
-    console.log("Setting Filter");
+// Function to update homepage listings based on the filteredArray
+function updateListings(filteredArray) {
+    var tableBody = document.querySelector("tbody");
+    tableBody.innerHTML = ``;
+    for (let i=0; i < filteredArray.length -1; i++) {
+        tableBody.innerHTML += `
+        <tr onclick="listingClicked(${filteredArray[row]["house_id"]});">
+            <td> ${filteredArray[row]["street_address"]} </td>
+            <td> ${filteredArray[row]["city"]}, ${filteredArray[row]["State"]} </td>
+            <td> $${filteredArray[row]["asking_price"]} </td>
+        </tr>`
+    ;
+    }
 }
 
 // Function to reset filter parameters
