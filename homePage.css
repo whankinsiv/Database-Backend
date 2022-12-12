@@ -92,21 +92,6 @@ button {
     margin-right: 3vw;
 }
 
-@media screen and (min-width: 0) and (max-width: 600px) {
-    #newListingButton {
-        display: none;
-    }
-
-    #title {
-        width: 30vw;
-    }
-    
-    #header {
-        height: 5vh;
-    }
-
-}
-
 #listingsTable {
     width: 100vw;
 }
