@@ -186,12 +186,14 @@ button {
 }
 
 #showListingPopupInfo {
+    width: 50%;
     display: flex;
     flex-direction: column;
     padding: 10px 15px;
 }
 
-#showListingPopupHistory {
+#showListingPopupInfoRight {
+    width: 50%;
     display: flex;
     flex-direction: column;
     padding: 10px 15px;
