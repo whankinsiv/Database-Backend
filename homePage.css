@@ -3,7 +3,6 @@ body {
     height: 100%;
     margin: 0;
     color: white;
-
 }
 
 /* Main page */
@@ -68,7 +67,7 @@ button {
 }
 
 #title {
-    width: 15vw;
+    width: 25vw;
     text-align: center;
 }
 
@@ -83,7 +82,7 @@ button {
 }
 
 #newListing {
-    width: 20vw;
+    width: 30vw;
     margin-left: auto;
 }
 
