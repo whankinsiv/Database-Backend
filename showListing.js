@@ -52,8 +52,8 @@ async function listingClicked(house_id) {
     listingPopupInfo.innerHTML += "<div>Bedrooms: " + bedroomCount + "<\div>";
     listingPopupInfo.innerHTML += "<div>Bathrooms: " + bathroomCount + "<\div>";
     listingPopupInfo.innerHTML += "<div>Garage Size: " + garageSize + "<\div>";
-    listingPopupInfo.innerHTML += "<div>Closest High School: " + nearestSchool + "<\div>";
     listingPopupInfo.innerHTML += "<div>Zip Code: " + zipCode + "<\div>";
+    listingPopupInfo.innerHTML += "<div>Closest High School: " + nearestSchool + "<\div>";
     
     listingPopupInfoRight.innerHTML = "<div>Solar Installed: " + solarInstalled + "<\div>";
     listingPopupInfoRight.innerHTML += "<div>Guest House: " + guestHouse + "<\div>";
