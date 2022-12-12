@@ -215,9 +215,7 @@ button {
     bottom: 0;
     background-color: white;
     pointer-events: none;
-    body {
-        overflow: hidden;
-    }
+    overflow: hidden;
 }
 
 #overlay.active {
