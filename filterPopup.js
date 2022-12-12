@@ -101,11 +101,13 @@ function updateListings(filteredArray) {
     var tableBody = document.querySelector("tbody");
     tableBody.innerHTML = ``;
     for (let i=0; i < filteredArray.length; i++) {
+        let askingPriceInt = parseInt(filteredArray[i]["asking_price"])
+        let askingPriceFormated = askingPriceInt.toLocaleString()
         tableBody.innerHTML += `
         <tr onclick="listingClicked(${filteredArray[i]["house_id"]});">
             <td> ${filteredArray[i]["street_address"]} </td>
             <td> ${filteredArray[i]["city"]}, ${filteredArray[i]["State"]} </td>
-            <td> $${filteredArray[i]["asking_price"]} </td>
+            <td> $${askingPriceFormated} </td>
         </tr>`
     ;
     }
