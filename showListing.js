@@ -27,7 +27,7 @@ async function listingClicked(house_id) {
     var solarInstalled = clickedListingInfo[0]['solar_installed'];
     var heatingType = clickedListingInfo[0]['heating_type'];
     var coolingType = clickedListingInfo[0]['cooling_type'];
-    var streetParking = clickedListingINfo[0]['street_parking'];
+    var streetParking = clickedListingInfo[0]['street_parking'];
     var nearestSchool = clickedListingInfo[0]['nearest_school'];
 
     var askingPrice = clickedListingInfo[0]['asking_price'];
