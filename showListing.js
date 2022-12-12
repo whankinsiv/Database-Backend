@@ -2,7 +2,6 @@ const listingPopup = document.getElementById("showListingPopup");
 const listingPopupHeader = document.getElementById("showListingPopupHeader");
 const listingPopupBody = document.getElementById("showListingPopupBody");
 const listingPopupInfo = document.getElementById("showListingPopupInfo");
-const listingPopupHistory = document.getElementById("showListingPopupHistory");
 const listingPopupFooter = document.getElementById("showListingPopupFooter");
 
 // Global variable to hold the property info about the last clicked listing.
@@ -42,10 +41,7 @@ async function listingClicked(house_id) {
     listingPopupInfo.innerHTML += "<div>sqft: " + sqft + "<\div>";
     listingPopupInfo.innerHTML += "<div>Bedrooms: " + bedroomCount + "<\div>";
     listingPopupInfo.innerHTML += "<div>Bathrooms: " + bathroomCount + "<\div>";
-
-    // Populate property history
-    listingPopupHistory.innerHTML = "Property History:";
-    listingPopupHistory.innerHTML += "<div>Put past listings w/ same house id here<\div>";
+    listingPopupInfo.innerHTML += "<div>: " + bathroomCount + "<\div>";
 
     // Populate footer
     listingPopupFooter.innerHTML = "<div>Listed " + listDate + " by " + listAgent + ".</div>"; 
