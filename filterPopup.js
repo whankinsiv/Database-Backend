@@ -6,6 +6,7 @@ const filterPopup = document.getElementById('filterPopup')
 const minPriceForum = document.getElementById('minPrice')
 const maxPriceForum = document.getElementById('maxPrice')
 const minBedsForum = document.getElementById('minBeds')
+const minBathsForum = document.getElementById('minBaths')
 var filteredArray = [];
 
 filterButton.addEventListener('click', () => {
@@ -32,6 +33,10 @@ maxPriceForum.addEventListener("input", function() {
 
 minBedsForum.addEventListener("input", function() {
   minBeds = minBedsForum.value;
+});
+
+minBathsForum.addEventListener("input", function() {
+  minBaths = minBathsForum.value;
 });
 
 // Function to produce reduced data array based on filter parameters 
@@ -65,20 +70,28 @@ function setFilter() {
     }
     // If Max Price is empty push entire filteredArray1
     else {
-        for (let j=0; j < filteredArray1.length; j++) {
-            filteredArray2.push(filteredArray1[j])
+        filteredArray2 = filteredArray1
+    }
+    
+    // Filter by Min Beds
+    if (minBeds.length > 0) {
+        for (let k=0; k < filteredArray1.length; k++) {
+            if (filteredArray2[k]["bedroom_count"] >= minBeds) {
+                filteredArray3.push(filteredArray2[k])
+            }
         }
+    }
+    // If Min Beds is empty push entired filteredArray2 
+    else {
+        filteredArray3 = filteredArray2
     }
     
     
     // Set the main filter array after completing all filtering
-    filteredArray = filteredArray2
+    filteredArray = filteredArray3
     
     // Update home page listings based on new array
     updateListings(filteredArray)
-    
-    console.log(filteredArray1);
-    console.log(filteredArray2);
 }
 
 // Function to update homepage listings based on the filteredArray
