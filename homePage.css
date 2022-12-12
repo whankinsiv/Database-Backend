@@ -72,9 +72,8 @@ button {
 }
 
 
-#searchInput {
-    width: 15vw;
-    margin-left: 1vw;
+#filterListings {
+    width: 10vw;
 }
 
 #filterButton {
