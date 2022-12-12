@@ -27,6 +27,10 @@ tr {
     text-align: center;
 }
 
+tr:hover {
+    border-color: #404040;
+}
+
 a:link {
   color: lightgrey;
   text-decoration: none;
