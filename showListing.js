@@ -48,7 +48,7 @@ async function listingClicked(house_id) {
     listingPopupInfo.innerHTML += "<div>Bedrooms: " + bedroomCount + "<\div>";
     listingPopupInfo.innerHTML += "<div>Bathrooms: " + bathroomCount + "<\div>";
     listingPopupInfo.innerHTML += "<div>Garage Size: " + garageSize + "<\div>";
-    listingPopopInfo.innerHTML += "<div>Solar Installed: " + solarInstalled + "<\div>";
+    listingPopupInfo.innerHTML += "<div>Solar Installed: " + solarInstalled + "<\div>";
     listingPopupInfo.innerHTML += "<div>Heating Type: " + heatingType + "<\div>";
     listingPopupInfo.innerHTML += "<div>Cooling Type: " + coolingType + "<\div>";
     listingPopupInfo.innerHTML += "<div>Pool: " + pool + "<\div>";
