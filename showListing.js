@@ -17,6 +17,7 @@ async function listingClicked(house_id) {
     var address = clickedListingInfo[0]['street_address'];
     var state = clickedListingInfo[0]['State'];
     var city = clickedListingInfo[0]['city'];
+    var zipCode = clickedListingInfo[0]['zip_code'];
     
     var sqft = clickedListingInfo[0]['square_feet'];
     var bedroomCount = clickedListingInfo[0]['bedroom_count'];
@@ -57,6 +58,7 @@ async function listingClicked(house_id) {
     listingPopupInfo.innerHTML += "<div>Heating Type: " + heatingType + "<\div>";
     listingPopupInfo.innerHTML += "<div>Cooling Type: " + coolingType + "<\div>";
     listingPopupInfo.innerHTML += "<div>Closest High School: " + nearestSchool + "<\div>";
+    listingPopupInfo.innerHTML += "<div>Zip Code: " + zipCode + "<\div>";
 
     // Populate footer
     listingPopupFooter.innerHTML = "<div>Listed " + listDate + " by " + listAgent + ".</div>"; 
