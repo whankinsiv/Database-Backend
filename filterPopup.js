@@ -36,6 +36,9 @@ minBedsForum.addEventListener("input", function() {
 // Function to produce reduced data array based on filter parameters 
 function setFilter() {
     filteredArray = []
+    let filteredArray1 = []
+    let filteredArray2 = []
+    let filteredArray3 = []
     console.log(currentListingsOrdered);
     console.log(currentListingsOrdered[1]);
     // Filter by Min Price
@@ -43,15 +46,37 @@ function setFilter() {
         let j = 0
         for (let i=0; i < currentListingsOrdered.length - 1; i++) {
             if (currentListingsOrdered[i]["asking_price"] >= minPrice) {
-                filteredArray.push(currentListingsOrdered[i])
+                filteredArray1.push(currentListingsOrdered[i])
                 j++;
             }
         }
         console.log(filteredArray);
-    }
+    } 
+    // If Min Price is empty push the entire currentListingsOrdered array to filteredArray
     else {
-        console.log("NO VALUE");
+        for (let i=0; i < currentListingsOrdered.length - 1; i++) {
+            filteredArray1.push(currentListingsOrdered[i])
+        }
     }
+    
+    // Filter by Max Price
+    if (maxPrice.length( > 0 ) {
+        let l = 0
+        for (let k=0; k < filteredArray1.length - 1; k++) {
+            if (filteredArray1[i]["asking_price"] <= maxPrice) {
+                filteredArray2.push(filteredArray1[i])
+                j++;
+            }
+        }
+    }
+    // If Max Price is empty push entire filteredArray1
+    else {
+        for (let i=0; i < filteredArray1.length - 1; i++) {
+            filteredArray2.push(filteredArray1[i])
+        }
+    }
+    console.log(filteredArray2);
+
     /*
     */
     console.log("Min Price: " + minPrice);
