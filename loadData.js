@@ -38,14 +38,14 @@ function populateTable(numOfEntries) {
 // Function for populating each indiviudal row in the listings table.
 function populateRow(row) {
     var tableBody = document.querySelector("tbody");
-    var testNum = parseInt(currentListings[row]["asking_price"])
-    var test = testNum.toLocaleString()
+    var askingPriceInt = parseInt(currentListings[row]["asking_price"])
+    var AskingPriceFormated = testNum.toLocaleString()
     console.log(test)
     tableBody.innerHTML += `
         <tr onclick="listingClicked(${currentListings[row]["house_id"]});">
             <td> ${currentListings[row]["street_address"]} </td>
             <td> ${currentListings[row]["city"]}, ${currentListings[row]["State"]} </td>
-            <td> ${currentListings[row]["asking_price"]} </td>
+            <td> ${AskingPriceFormated} </td>
         </tr>`
     ;
 }
