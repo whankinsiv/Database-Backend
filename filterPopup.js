@@ -41,7 +41,7 @@ function setFilter() {
     let filteredArray3 = []
     // Filter by Min Price
     if (minPrice.length > 0) {
-        for (let i=0; i < currentListingsOrdered.length - 1; i++) {
+        for (let i=0; i < currentListingsOrdered.length; i++) {
             if (currentListingsOrdered[i]["asking_price"] >= minPrice) {
                 filteredArray1.push(currentListingsOrdered[i])
             }
@@ -49,7 +49,7 @@ function setFilter() {
     } 
     // If Min Price is empty push the entire currentListingsOrdered array to filteredArray
     else {
-        for (let i=0; i < currentListingsOrdered.length - 1; i++) {
+        for (let i=0; i < currentListingsOrdered.length; i++) {
             filteredArray1.push(currentListingsOrdered[i])
         }
     }
