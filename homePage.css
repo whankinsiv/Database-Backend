@@ -74,6 +74,7 @@ button {
 
 
 #filterListings {
+    min-width: 50px;
     width: 10vw;
 }
 
