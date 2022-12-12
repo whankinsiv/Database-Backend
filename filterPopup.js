@@ -86,10 +86,10 @@ function updateListings(filteredArray) {
     tableBody.innerHTML = ``;
     for (let i=0; i < filteredArray.length -1; i++) {
         tableBody.innerHTML += `
-        <tr onclick="listingClicked(${filteredArray[row]["house_id"]});">
-            <td> ${filteredArray[row]["street_address"]} </td>
-            <td> ${filteredArray[row]["city"]}, ${filteredArray[row]["State"]} </td>
-            <td> $${filteredArray[row]["asking_price"]} </td>
+        <tr onclick="listingClicked(${filteredArray[i]["house_id"]});">
+            <td> ${filteredArray[i]["street_address"]} </td>
+            <td> ${filteredArray[i]["city"]}, ${filteredArray[i]["State"]} </td>
+            <td> $${filteredArray[i]["asking_price"]} </td>
         </tr>`
     ;
     }
