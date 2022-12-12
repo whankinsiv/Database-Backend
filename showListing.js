@@ -1,6 +1,7 @@
 const listingPopup = document.getElementById("showListingPopup");
 const listingPopupHeader = document.getElementById("showListingPopupHeader");
 const listingPopupBody = document.getElementById("showListingPopupBody");
+const listingPopupInfoRight = document.getElementById("showListingPopupInfoRight");
 const listingPopupInfo = document.getElementById("showListingPopupInfo");
 const listingPopupFooter = document.getElementById("showListingPopupFooter");
 
@@ -51,14 +52,15 @@ async function listingClicked(house_id) {
     listingPopupInfo.innerHTML += "<div>Bedrooms: " + bedroomCount + "<\div>";
     listingPopupInfo.innerHTML += "<div>Bathrooms: " + bathroomCount + "<\div>";
     listingPopupInfo.innerHTML += "<div>Garage Size: " + garageSize + "<\div>";
-    listingPopupInfo.innerHTML += "<div>Solar Installed: " + solarInstalled + "<\div>";
-    listingPopupInfo.innerHTML += "<div>Guest House: " + guestHouse + "<\div>";
-    listingPopupInfo.innerHTML += "<div>Pool: " + pool + "<\div>";
-    listingPopupInfo.innerHTML += "<div>Street Parking: " + streetParking + "<\div>";
-    listingPopupInfo.innerHTML += "<div>Heating Type: " + heatingType + "<\div>";
-    listingPopupInfo.innerHTML += "<div>Cooling Type: " + coolingType + "<\div>";
     listingPopupInfo.innerHTML += "<div>Closest High School: " + nearestSchool + "<\div>";
     listingPopupInfo.innerHTML += "<div>Zip Code: " + zipCode + "<\div>";
+    
+    listingPopupInfoRight.innerHTML = "<div>Solar Installed: " + solarInstalled + "<\div>";
+    listingPopupInfoRight.innerHTML += "<div>Guest House: " + guestHouse + "<\div>";
+    listingPopupInfoRight.innerHTML += "<div>Pool: " + pool + "<\div>";
+    listingPopupInfoRight.innerHTML += "<div>Street Parking: " + streetParking + "<\div>";
+    listingPopupInfoRight.innerHTML += "<div>Heating Type: " + heatingType + "<\div>";
+    listingPopupInfoRight.innerHTML += "<div>Cooling Type: " + coolingType + "<\div>";
 
     // Populate footer
     listingPopupFooter.innerHTML = "<div>Listed " + listDate + " by " + listAgent + ".</div>"; 
