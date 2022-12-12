@@ -27,6 +27,14 @@ tr {
     text-align: center;
 }
 
+a:link {
+  color: lightgrey;
+}
+
+a:hover {
+  color: white;
+}
+
 #listingTableHeader {
     height: 20px;
 }
