@@ -87,7 +87,7 @@ tr {
 
 #filterPopup {
     position: fixed;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     border: 1px solid black;
