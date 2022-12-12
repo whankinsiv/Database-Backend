@@ -49,6 +49,8 @@ a:hover {
 button {
     color: white;
     background-color: #121212;
+    border-radius: 4px;
+    text-decoration: none;
 }
 
 #listingTableHeader {
