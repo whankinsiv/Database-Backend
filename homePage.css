@@ -45,6 +45,13 @@ a:hover {
   text-decoration: none;
 }
 
+input:-internal-autofill-selected {
+    background-color: #282828;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
 input[type=text] {
   background-color: #282828;
   color: white;
