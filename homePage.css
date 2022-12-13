@@ -157,7 +157,9 @@ button {
     padding-right: 50px;
 }
 
-#bathroomCountInput {
+#bathroomCountInput,
+#bedroomCountInput,
+#garageSpacesInput {
     background-color: #282828;
     color: white;
     width: 30px;
