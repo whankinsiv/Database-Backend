@@ -35,10 +35,6 @@ minBedsForum.addEventListener("input", function() {
   minBeds = minBedsForum.value;
 });
 
-minBathsForum.addEventListener("input", function() {
-  minBaths = minBathsForum.value;
-});
-
 // Function to produce reduced data array based on filter parameters 
 function setFilter() {
     filteredArray = []
