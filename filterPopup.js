@@ -7,6 +7,9 @@ const minPriceForum = document.getElementById('minPrice')
 const maxPriceForum = document.getElementById('maxPrice')
 const minBedsForum = document.getElementById('minBeds')
 var filteredArray = [];
+var minPrice
+var maxPrice
+var minBeds
 
 filterButton.addEventListener('click', () => {
     openFilterPopup()
@@ -23,15 +26,15 @@ setFilterButton.addEventListener('click', () => {
 })
 
 minPriceForum.addEventListener("input", function() {
-  var minPrice = minPriceForum.value;
+  minPrice = minPriceForum.value;
 });
 
 maxPriceForum.addEventListener("input", function() {
-  var maxPrice = maxPriceForum.value;
+  maxPrice = maxPriceForum.value;
 });
 
 minBedsForum.addEventListener("input", function() {
-  var minBeds = minBedsForum.value;
+  minBeds = minBedsForum.value;
 });
 
 // Function to produce reduced data array based on filter parameters 
