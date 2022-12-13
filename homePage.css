@@ -165,6 +165,17 @@ button {
 
 #propertyInformationContainer {
     display: flex;
+    width: 100%;
+}
+
+#propertyInformationLeft {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#propertyInformationRight [
+    display: flex;
     flex-direction: column;
     width: 50%;
 }
