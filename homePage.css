@@ -49,8 +49,8 @@ input[type=text] {
   background-color: #181818;
   width: 100px;
   margin: 2px;
-  box-sizing: border-box;
-  text-decoration: none;
+  border: none;
+  border-bottom: 2px solid white;
     
 }
 
