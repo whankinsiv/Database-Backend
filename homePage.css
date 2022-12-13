@@ -98,6 +98,7 @@ button {
 
 #newListingButton {
     float: right;
+    margin-right: 3vw;
 }
 
 #listingsTable {
