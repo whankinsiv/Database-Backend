@@ -98,7 +98,6 @@ button {
 
 #newListingButton {
     float: right;
-    margin-right: 3vw;
 }
 
 #listingsTable {
@@ -152,6 +151,7 @@ button {
     max-width: 800px;
     z-index: 4;
     padding-left: 50px;
+    padding-right: 50px;
 }
 
 #newListingPopupHeader {
