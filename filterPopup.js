@@ -6,7 +6,6 @@ const filterPopup = document.getElementById('filterPopup')
 const minPriceForum = document.getElementById('minPrice')
 const maxPriceForum = document.getElementById('maxPrice')
 const minBedsForum = document.getElementById('minBeds')
-const minBathsForum = document.getElementById('minBaths')
 var filteredArray = [];
 
 filterButton.addEventListener('click', () => {
