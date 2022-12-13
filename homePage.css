@@ -45,7 +45,8 @@ a:hover {
   text-decoration: none;
 }
 
-input[type=text] {
+input[type=text],
+input[type=date] {
   background-color: #282828;
   color: white;
   width: 100px;
