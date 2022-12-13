@@ -47,6 +47,7 @@ a:hover {
 
 input[type=text] {
   background-color: #282828;
+  color: white;
   width: 100px;
   margin: 2px;
   border: none;
