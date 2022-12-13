@@ -194,6 +194,10 @@ button {
     width: 50%;
 }
 
+#submitButtonContainer {
+    justify-content: center;
+}
+
 #showListingPopup {
     position: fixed;
     top: 40%;
