@@ -195,6 +195,7 @@ button {
 }
 
 #submitButtonContainer {
+    padding-right: 50px;
     text-align: center;
 }
 
