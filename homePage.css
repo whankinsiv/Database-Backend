@@ -162,7 +162,8 @@ button {
 
 #bathroomCountInput,
 #bedroomCountInput,
-#garageSpacesInput {
+#garageSpacesInput,
+#minBeds {
     background-color: #282828;
     color: white;
     width: 30px;
