@@ -195,7 +195,7 @@ button {
 }
 
 #submitButtonContainer {
-    justify-content: center;
+    text-align: center;
 }
 
 #showListingPopup {
