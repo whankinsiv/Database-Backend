@@ -44,7 +44,7 @@ function setFilter() {
     let filteredArray2 = []
     let filteredArray3 = []
     // Filter by Min Price
-    if (minPrice.length > 0) {
+    if (minPrice != null) {
         for (let i=0; i < currentListingsOrdered.length; i++) {
             if (currentListingsOrdered[i]["asking_price"] >= minPrice) {
                 filteredArray1.push(currentListingsOrdered[i])
@@ -59,7 +59,7 @@ function setFilter() {
     }
     
     // Filter by Max Price
-    if (maxPrice.length > 0) {
+    if (maxPrice != null) {
         for (let j=0; j < filteredArray1.length; j++) {
             if (filteredArray1[j]["asking_price"] <= maxPrice) {
                 filteredArray2.push(filteredArray1[j])
@@ -72,7 +72,7 @@ function setFilter() {
     }
 
     // Filter by Min Beds
-    if (minBeds.length > 0) {
+    if (minBeds != null) {
         for (let k=0; k < filteredArray2.length; k++) {
             let count = filteredArray2[k]["bedroom_count"]
             if (count >= minBeds) {
