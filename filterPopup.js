@@ -115,9 +115,9 @@ function updateListings(filteredArray) {
 function resetFilter() {
     var tableBody = document.querySelector("tbody");
     tableBody.innerHTML = ``;
-    minPrice = ''
-    maxPrice = ''
-    minBeds = ''
+    minPriceFourm.value = ''
+    maxPriceFourm.value = ''
+    minBedsFourm.value = ''
     populateTable(currentListings.length);
 }
 
