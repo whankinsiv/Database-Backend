@@ -3,9 +3,9 @@ const setFilterButton = document.getElementById("setFilter")
 const resetFilterButton = document.getElementById("resetFilter")
 const overlay = document.getElementById('overlay')
 const filterPopup = document.getElementById('filterPopup')
-var minPriceForum = document.getElementById('minPrice')
-var maxPriceForum = document.getElementById('maxPrice')
-var minBedsForum = document.getElementById('minBeds')
+const minPriceForum = document.getElementById('minPrice')
+const maxPriceForum = document.getElementById('maxPrice')
+const minBedsForum = document.getElementById('minBeds')
 var filteredArray = [];
 
 filterButton.addEventListener('click', () => {
@@ -23,15 +23,15 @@ setFilterButton.addEventListener('click', () => {
 })
 
 minPriceForum.addEventListener("input", function() {
-  minPrice = minPriceForum.value;
+  var minPrice = minPriceForum.value;
 });
 
 maxPriceForum.addEventListener("input", function() {
-  maxPrice = maxPriceForum.value;
+  var maxPrice = maxPriceForum.value;
 });
 
 minBedsForum.addEventListener("input", function() {
-  minBeds = minBedsForum.value;
+  var minBeds = minBedsForum.value;
 });
 
 // Function to produce reduced data array based on filter parameters 
