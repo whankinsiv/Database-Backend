@@ -168,6 +168,17 @@ button {
     border-bottom: 2px solid white;
 }
 
+#licenseNumberInput,
+#zipCodeInput,
+#listPriceInput {
+    background-color: #282828;
+    color: white;
+    width: 80px;
+    margin: 2px;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
 #newListingPopupHeader {
     padding: 10px 15px;
     display: flex;
