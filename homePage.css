@@ -46,7 +46,7 @@ a:hover {
 }
 
 input[type=text] {
-  background-color: #181818;
+  background-color: none;
   width: 100px;
   margin: 2px;
   border: none;
