@@ -163,6 +163,10 @@ button {
     width: 100%;
 }
 
+#contractInformationContainer {
+    margin-top: 2vh;
+}
+
 #propertyInformationContainer {
     margin-top: 2vh;
     display: flex;
