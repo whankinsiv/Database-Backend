@@ -158,9 +158,21 @@ button {
     padding: 10px 15px;
 }
 
+#newListingPopupBodyTop {
+    display flex;
+    width: 100%;
+}
+
 #propertyInformationContainer {
     display: flex;
     flex-direction: column;
+    width: 50%;
+}
+
+#addressInformationContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 
 #showListingPopup {
