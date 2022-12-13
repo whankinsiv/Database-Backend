@@ -180,6 +180,15 @@ button {
     border-bottom: 2px solid white;
 }
 
+#squareFootageInput {
+    background-color: #282828;
+    color: white;
+    width: 50px;
+    margin: 2px;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
 #newListingPopupHeader {
     padding: 10px 15px;
     display: flex;
