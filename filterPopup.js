@@ -115,7 +115,7 @@ function resetFilter() {
     minPriceForum = ''
     maxPriceForum = ''
     minBedsForum = ''
-    populateTable(currentListings);
+    populateTable(currentListings.length);
 }
 
 // Function to open popup when filter button is pushed
