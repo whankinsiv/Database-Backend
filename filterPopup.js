@@ -3,9 +3,9 @@ const setFilterButton = document.getElementById("setFilter")
 const resetFilterButton = document.getElementById("resetFilter")
 const overlay = document.getElementById('overlay')
 const filterPopup = document.getElementById('filterPopup')
-const minPriceForum = document.getElementById('minPrice')
-const maxPriceForum = document.getElementById('maxPrice')
-const minBedsForum = document.getElementById('minBeds')
+var minPriceForum = document.getElementById('minPrice')
+var maxPriceForum = document.getElementById('maxPrice')
+var minBedsForum = document.getElementById('minBeds')
 var filteredArray = [];
 
 filterButton.addEventListener('click', () => {
