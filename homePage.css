@@ -45,6 +45,13 @@ a:hover {
   text-decoration: none;
 }
 
+input[type=text] {
+  width: 100px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
 button {
     padding: 1vh 1vw;
     border: none;
