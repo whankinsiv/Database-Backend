@@ -174,7 +174,7 @@ button {
     width: 50%;
 }
 
-#propertyInformationRight [
+#propertyInformationRight {
     margin-top: 18.5px;
     display: flex;
     flex-direction: column;
