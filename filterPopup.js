@@ -104,7 +104,7 @@ function setFilter() {
     //Filter By Min Square Feet
     if (minSquareFeet != null) {
         for (let l=0; l < filteredArray3.length; l++) {
-            count = filteredArray2[l]["square_feet"]
+            count = filteredArray3[l]["square_feet"]
             if (count >= minSquareFeet) {
                 filteredArray4.push(filteredArray3[l])
             }
