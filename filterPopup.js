@@ -116,6 +116,8 @@ function setFilter() {
     
     //Filter By Min Square Feet
     if (minSquareFeet != null) {
+        console.log(filteredArray4)
+        console.log(filteredArray4[0]["square_feet"])
         for (let l=0; l < filteredArray4.length; l++) {
             count = filteredArray4[l]["square_feet"]
             console.log(count)
