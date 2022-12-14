@@ -26,7 +26,21 @@ function closeNewListingPopup() {
 // Send New Listing to Database
 function submitButtonPushed() {
     // Check if all required fields all filled out and valid
-
-    // Add entries to appripriate tables
-
+    fetch('/getListings.php')
+    .then(response => {
+    }
 }
+          
+async function updateTable() {
+    var agentName = document.getElementById('agentFirstName') + " " + document.getElementById('agentLastName')
+    var licNum = document.getElementById('licenseNumberInput')
+    var firmName = document.getElementById('firm_name')
+    var script = "/getListingInfo.php?agent_name=" + encodeURIComponent(agentName) + "&licence_reference_number=" + encodeURIComponent(licNum) + "&firm_name=" + encodeURIComponent(firmName);
+    const response = await fetch(script);
+    const data = await response.json();
+    
+    // Set Global variable  holding currently clicked listing info. 
+    clickedListingInfo = data;
+    console.log(clickedListingInfo);
+    return clickedListingInfo;
+}          
