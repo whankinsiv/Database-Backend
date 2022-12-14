@@ -88,7 +88,7 @@ function setFilter() {
     // Filter by Min Beds
     if (minBeds != null) {
         for (let k=0; k < filteredArray2.length; k++) {
-            let count = filteredArray2[k]["bedroom_count"]
+            var count = filteredArray2[k]["bedroom_count"]
             if (count >= minBeds) {
                 filteredArray3.push(filteredArray2[k])
             }
@@ -103,7 +103,7 @@ function setFilter() {
     //Filter By Min Square Feet
     if (minSquareFeet != null) {
         for (let l=0; l < filteredArray3.length; l++) {
-            let count = filteredArray2[l]["square_feet"]
+            count = filteredArray2[l]["square_feet"]
             if (count >= minSquareFeet) {
                 filteredArray4.push(filteredArray3[l])
             }
@@ -117,7 +117,7 @@ function setFilter() {
     // Filter By Min Bathroom Count
     if (minBathroom != null) {
         for (let m=0; m < filteredArray4.length; m++) {
-            let count = filteredArray2[m]["bathroom_count"]
+            count = filteredArray2[m]["bathroom_count"]
             if (count >= minBathroom) {
                 filteredArray5.push(filteredArray4[m])
             }
