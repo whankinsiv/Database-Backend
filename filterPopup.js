@@ -14,6 +14,7 @@ var maxPrice
 var minBeds
 var minSquareFeet
 var minBathroom
+var count = 0;
 
 filterButton.addEventListener('click', () => {
     openFilterPopup()
@@ -88,7 +89,7 @@ function setFilter() {
     // Filter by Min Beds
     if (minBeds != null) {
         for (let k=0; k < filteredArray2.length; k++) {
-            var count = filteredArray2[k]["bedroom_count"]
+            count = filteredArray2[k]["bedroom_count"]
             if (count >= minBeds) {
                 filteredArray3.push(filteredArray2[k])
             }
