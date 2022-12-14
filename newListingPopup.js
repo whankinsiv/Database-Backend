@@ -35,10 +35,6 @@ async function updateTable() {
     var firmName = document.getElementById('firm_name')
     var script = "/getListingInfo.php?agent_name=" + encodeURIComponent(agentName) + "&licence_reference_number=" + encodeURIComponent(licNum) + "&firm_name=" + encodeURIComponent(firmName);
     const response = await fetch(script);
-    const data = await response.json();
-    
-    // Set Global variable  holding currently clicked listing info. 
-    clickedListingInfo = data;
-    console.log(clickedListingInfo);
+    console.log(response)
     return clickedListingInfo;
 }          
