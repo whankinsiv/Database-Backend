@@ -26,9 +26,7 @@ function closeNewListingPopup() {
 // Send New Listing to Database
 function submitButtonPushed() {
     // Check if all required fields all filled out and valid
-    fetch('/getListings.php')
-    .then(response => {
-    }
+    updateTable()
 }
           
 async function updateTable() {
