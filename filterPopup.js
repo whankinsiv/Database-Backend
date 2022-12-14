@@ -118,6 +118,7 @@ function setFilter() {
     if (minSquareFeet != null) {
         for (let l=0; l < filteredArray4.length; l++) {
             count = filteredArray4[l]["square_feet"]
+            console.log(square_feet)
             if (count >= minSquareFeet) {
                 filteredArray5.push(filteredArray4[l])
                 console.log(filteredArray4[l]["square_feet"]);
