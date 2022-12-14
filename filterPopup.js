@@ -118,7 +118,7 @@ function setFilter() {
     // Filter By Min Bathroom Count
     if (minBathroom != null) {
         for (let m=0; m < filteredArray4.length; m++) {
-            count = filteredArray2[m]["bathroom_count"]
+            count = filteredArray4[m]["bathroom_count"]
             if (count >= minBathroom) {
                 filteredArray5.push(filteredArray4[m])
             }
