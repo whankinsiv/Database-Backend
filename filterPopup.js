@@ -100,31 +100,30 @@ function setFilter() {
         filteredArray3 = filteredArray2
     }
     
-    
-    //Filter By Min Square Feet
-    if (minSquareFeet != null) {
-        for (let l=0; l < filteredArray3.length; l++) {
-            count = filteredArray3[l]["square_feet"]
-            if (count >= minSquareFeet) {
-                filteredArray4.push(filteredArray3[l])
-            }
-        }
-    }
-    // If MinSquareFeet is empty push entired filteredArray2 
-    else {
-        filteredArray4 = filteredArray3
-    }
-    
     // Filter By Min Bathroom Count
     if (minBathroom != null) {
-        for (let m=0; m < filteredArray4.length; m++) {
-            count = filteredArray4[m]["bathroom_count"]
+        for (let m=0; m < filteredArray3.length; m++) {
+            count = filteredArray3[m]["bathroom_count"]
             if (count >= minBathroom) {
-                filteredArray5.push(filteredArray4[m])
+                filteredArray4.push(filteredArray3[m])
             }
         }
     }
     // If MinBathroomCount is empty push entired filteredArray2 
+    else {
+        filteredArray4 = filteredArray3
+    }
+    
+    //Filter By Min Square Feet
+    if (minSquareFeet != null) {
+        for (let l=0; l < filteredArray4.length; l++) {
+            count = filteredArray4[l]["square_feet"]
+            if (count >= minSquareFeet) {
+                filteredArray5.push(filteredArray4[l])
+            }
+        }
+    }
+    // If MinSquareFeet is empty push entired filteredArray2 
     else {
         filteredArray5 = filteredArray4
     }
