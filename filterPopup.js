@@ -115,7 +115,7 @@ function setFilter() {
     }
     
     // Filter By Min Bathroom Count
-    if (minSquareFeet != null) {
+    if (minBathroom != null) {
         for (let m=0; m < filteredArray4.length; m++) {
             let count = filteredArray2[m]["bathroom_count"]
             if (count >= minBathroom) {
@@ -164,6 +164,8 @@ function resetFilter() {
     minPriceForum.value = ''
     maxPriceForum.value = ''
     minBedsForum.value = ''
+    minSquareFeetForum.value = ''
+    minBathroomForum.value = ''
     populateTable(currentListings.length);
 }
 
