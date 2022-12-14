@@ -6,10 +6,14 @@ const filterPopup = document.getElementById('filterPopup')
 const minPriceForum = document.getElementById('minPrice')
 const maxPriceForum = document.getElementById('maxPrice')
 const minBedsForum = document.getElementById('minBeds')
+const minSquareFeetForum = document.getElementById('minSquareFeet')
+const minBathroomForum = document.getElementById('minBathroom')
 var filteredArray = [];
 var minPrice
 var maxPrice
 var minBeds
+var minSquareFeet
+var minBathroom
 
 filterButton.addEventListener('click', () => {
     openFilterPopup()
@@ -37,12 +41,22 @@ minBedsForum.addEventListener("input", function() {
   minBeds = minBedsForum.value;
 });
 
+minSquareFeetForum.addEventListener("input", function() {
+    minSquareFeet = minSquareFeetForum.value;
+});
+
+minBathroomForum.addEventListener("input", function() {
+    minBathroom = minBathroomForum.value;
+});
+
 // Function to produce reduced data array based on filter parameters 
 function setFilter() {
     filteredArray = []
     let filteredArray1 = []
     let filteredArray2 = []
     let filteredArray3 = []
+    let filteredArray4 = []
+    let filteredArray5 = []
     // Filter by Min Price
     if (minPrice != null) {
         for (let i=0; i < currentListingsOrdered.length; i++) {
@@ -85,10 +99,42 @@ function setFilter() {
         filteredArray3 = filteredArray2
     }
     
-    console.log(filteredArray3)
+    
+    //Filter By Min Square Feet
+    if (minSquareFeet != null) {
+        for (let l=0; l < filteredArray3.length; l++) {
+            let count = filteredArray2[l]["square_feet"]
+            if (count >= minSquareFeet) {
+                filteredArray4.push(filteredArray3[l])
+            }
+        }
+    }
+    // If MinSquareFeet is empty push entired filteredArray2 
+    else {
+        filteredArray4 = filteredArray3
+    }
+    
+    // Filter By Min Bathroom Count
+    if (minSquareFeet != null) {
+        for (let m=0; m < filteredArray4.length; m++) {
+            let count = filteredArray2[m]["bathroom_count"]
+            if (count >= minBathroom) {
+                filteredArray5.push(filteredArray4[m])
+            }
+        }
+    }
+    // If MinBathroomCount is empty push entired filteredArray2 
+    else {
+        filteredArray5 = filteredArray4
+    }
+    
+    
+    
+    
+    console.log(filteredArray5)
     
     // Set the main filter array after completing all filtering
-    filteredArray = filteredArray3
+    filteredArray = filteredArray5
     
     // Update home page listings based on new array
     updateListings(filteredArray)
